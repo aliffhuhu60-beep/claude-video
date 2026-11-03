@@ -5,15 +5,15 @@ def hl(s): return re.sub(r'\*(.+?)\*', r'<b class="k">\1</b>', html.escape(s).re
 subtxt=''.join(f'<li>{hl(s)}</li>' for i,s in subs if s!='-')
 
 scenes=[
- ('Pembukaan','0:00 – 1:12',[('00138','0:10','Kad nama muncul 6 saat ketika anda memperkenalkan diri.')],
+ ('Pembukaan','0:00 – 1:12',[('00138','0:10','Wajah penuh dan kad nama ketika salam dan pengenalan diri.')],
   'Salam, pengenalan diri, tajuk syarahan, penghargaan.'),
- ('Bahagian 1 · Pengenalan & hubungan falsafah','1:12 – 3:43',[('00780','1:15','Peta syarahan.'),('02235','3:40','Soalan utama ditonjolkan.')],
+ ('Bahagian 1 · Pengenalan & hubungan falsafah','1:12 – 3:43',[('00780','1:15','Slaid Peta syarahan, anda di panel kanan.'),('02235','3:40','Slaid Isu pilihan, soalan utama ditonjolkan.')],
   'Peta syarahan, imbasan Tugasan 2 (lima tradisi + FPK), isu pilihan dan persoalan utama.'),
- ('Bahagian 2 · Analisis kritis isu semasa','3:43 – 13:48',[('02415','3:44','Lokasi kedua.'),('02585','4:01','Konsep Furnivall.'),('03860','5:57','Angka IPNas.'),('04575','7:09','Kajian belia Merdeka Center.'),('05355','8:19','Data 3R.'),('08135','12:50','Kesimpulan bukti.')],
+ ('Bahagian 2 · Analisis kritis isu semasa','3:43 – 13:48',[('02415','3:44','Slaid Konsep masyarakat majmuk.'),('02585','4:01','Petikan Furnivall.'),('03860','5:57','Carta IPNas.'),('04575','7:09','Bukti belia 43% → 58%.'),('05355','8:19','Carta 3R MCMC.'),('08135','12:50','Slaid Membaca bukti secara kritis.')],
   'Masyarakat majmuk, tiga lapisan isu, bukti (IPNas, Merdeka Center, 3R, enrolmen, ISIS), Allport, naratif mudah, had bukti, lensa konsep insan.'),
- ('Bahagian 3 · Cadangan penyelesaian: kerangka BINA','13:48 – 19:55',[('08780','13:50','Lokasi ketiga. Permulaan cadangan.'),('08895','14:01','Huruf BINA ditonjolkan.'),('10725','16:57','Protokol SEMAK.')],
+ ('Bahagian 3 · Cadangan penyelesaian: kerangka BINA','13:48 – 19:55',[('08780','13:50','Slaid Kerangka BINA.'),('08895','14:01','Kerangka BINA, huruf ditonjolkan dalam sarikata.'),('10725','16:57','Slaid N · Protokol SEMAK.')],
   'B, I, N, A satu per satu, pelan pelaksanaan, petunjuk kejayaan, tiga prinsip etika.'),
- ('Bahagian 4 · Rumusan & penutup','19:55 – 21:36',[('12695','19:57','Lokasi lif.'),('13325','21:00','Pendirian ditonjolkan.')],
+ ('Bahagian 4 · Rumusan & penutup','19:55 – 21:36',[('12695','19:57','Slaid Rumusan.'),('13325','21:00','Petikan pendirian.')],
   'Rumusan, pendirian, penutup.'),
 ]
 sc=''
@@ -70,6 +70,10 @@ figure{{margin:0;display:grid;gap:6px;min-width:0}}
 figure img{{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;display:block}}
 figcaption{{font-size:.9rem;color:var(--muted)}} .tc{{color:var(--fg);margin-right:8px}}
 .tbl{{overflow-x:auto}}
+.sls{{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}}
+.sl{{display:grid;gap:6px;font-size:.9rem;min-width:0}}
+.sl img,.sl .ph{{width:100%;aspect-ratio:16/9;border-radius:3px;border:1px solid var(--line);display:block}}
+.sl .ph{{display:grid;place-items:center;background:var(--surface);color:var(--muted);font-weight:600}}
 table{{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}}
 th,td{{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}}
 th{{font-size:.8rem;color:var(--muted);font-weight:600}}
@@ -88,20 +92,24 @@ details ol li::marker{{color:var(--muted);font:.8rem var(--mono)}}
 <div class="intro">
 <span class="eyebrow">Storyboard · untuk semakan sebelum render akhir</span>
 <h1>Video syarahan Tugasan 3 MPU3152</h1>
-<p>Suntingan ringkas sahaja: buang bahagian yang tidak sepatutnya ada, tambah sarikata, dan tonjolkan keypoint. Tiada muzik, tiada animasi, tiada peralihan berlebihan.</p>
-<dl class="facts"><div><dt>Tempoh asal</dt><dd>22:52</dd></div><div><dt>Selepas suntingan</dt><dd>21:36</dd></div><div><dt>Resolusi output</dt><dd>1920×1080 MP4</dd></div><div><dt>Sarikata</dt><dd>325 baris</dd></div></dl>
+<p>Slaid daripada Bahan Visual Video dimasukkan mengikut apa yang anda sebut, supaya video memenuhi kehendak format visual tugasan (slaid, carta, rajah, bukan sekadar wajah bercakap). Selebihnya kekal ringkas: sarikata, keypoint ditonjolkan, tiada muzik dan tiada animasi.</p>
+<dl class="facts"><div><dt>Tempoh asal</dt><dd>22:52</dd></div><div><dt>Selepas suntingan</dt><dd>21:43</dd></div><div><dt>Slaid dimasukkan</dt><dd>33 paparan</dd></div><div><dt>Resolusi output</dt><dd>1920×1080 MP4</dd></div><div><dt>Sarikata</dt><dd>325 baris</dd></div></dl>
 </div>
 
 <section><h2>Gaya</h2>
 <ul class="style-list">
 <li><span>Sarikata</span><span>Putih, tebal sederhana, garis hitam nipis, di tengah bawah. Maksimum 2 baris.</span></li>
 <li><span>Keypoint</span><span>Ditebalkan dan berwarna <b class="k">kuning</b>: angka bukti, konsep teras, huruf BINA dan SEMAK, pendirian.</span></li>
+<li><span>Susun atur</span><span>Slaid di kiri, anda di panel kanan, sarikata di jalur bawah supaya tidak menutup isi slaid. Wajah penuh hanya pada 17 saat pertama (salam dan kad nama).</span></li>
 <li><span>Kad nama</span><span>Sekali sahaja di awal (6 saat), kiri bawah.</span></li>
+<li><span>Rujukan</span><span>Halaman Rujukan dipaparkan 7 saat di hujung video.</span></li>
 <li><span>Audio</span><span>Kelantangan diseragamkan ke tahap standard YouTube. Tiada muzik latar.</span></li>
 <li><span>Peralihan</span><span>Potongan terus. Fade masuk di awal dan fade keluar di akhir sahaja.</span></li>
 </ul></section>
 
 <section><h2>Storyboard</h2><p style="margin-bottom:6px">Masa pada bingkai ialah masa dalam video selepas suntingan.</p>{sc}</section>
+
+<section><h2>Slaid dalam video</h2><p style="margin-bottom:12px">Masa ialah masa dalam video akhir. Halaman pemisah bahagian (Bahagian 1–4) tidak digunakan, mengikut permintaan anda.</p><div class="sls">{open('slrows.html').read()}</div></section>
 
 <section><h2>Bahagian yang dipotong</h2>
 <p style="margin-bottom:12px">Masa di bawah ialah masa dalam video asal.</p>
@@ -111,7 +119,7 @@ details ol li::marker{{color:var(--muted);font:.8rem var(--mono)}}
 <section><h2>Perlu keputusan anda</h2>
 <ul class="qs">
 <li><b>1. Potongan SEMAK (17:41 asal)</b><span>Rakaman berbunyi seperti tersangkut lalu diulang. Saya cadang potong cubaan pertama. Jika sebenarnya tiada kesilapan, saya kekalkan.</span></li>
-<li><b>2. Tempoh 21:36</b><span>Panduan tugasan menyasarkan 19:30–20:30. Saya boleh rapatkan semua jeda lebih 1 saat (jimat kira-kira 30 saat), tetapi ia masih melebihi 20:30. Memotong isi syarahan ialah keputusan anda, jadi saya tidak buat tanpa arahan.</span></li>
+<li><b>2. Tempoh 21:43</b><span>Panduan tugasan menyasarkan 19:30–20:30. Saya boleh rapatkan semua jeda lebih 1 saat (jimat kira-kira 30 saat), tetapi ia masih melebihi 20:30. Memotong isi syarahan ialah keputusan anda, jadi saya tidak buat tanpa arahan.</span></li>
 <li><b>3. Ejaan sarikata</b><span>Saya betulkan ejaan berdasarkan slaid anda (cth. IPNas, Furnivall, Allport, RIMUP, sosiogram). Satu perkataan kurang jelas dalam rakaman: "agar sekolah <i>menyediakan</i> ruang dialog yang selamat" (17:27 dalam video baharu). Sila semak senarai penuh di bawah.</span></li>
 </ul></section>
 

@@ -7,4 +7,4 @@ Sumber: `video falsafah.mp4` (Google Drive, folder "video raw").
 - `build.py` – senarai potongan (EDL) dan penjanaan `final.ass` / `sarikata.srt`
 - `storyboard.html` – storyboard untuk semakan sebelum render akhir
 
-Status: menunggu kelulusan storyboard sebelum render akhir.
+Status: video akhir dirender (render.py): slaid dari Bahan_Visual_Video.pdf, kamera di panel kanan, sarikata, Rujukan di hujung.
