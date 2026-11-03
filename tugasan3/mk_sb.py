@@ -7,13 +7,13 @@ subtxt=''.join(f'<li>{hl(s)}</li>' for i,s in subs if s!='-')
 scenes=[
  ('Pembukaan','0:00 – 1:12',[('00138','0:10','Kad nama muncul 6 saat ketika anda memperkenalkan diri.')],
   'Salam, pengenalan diri, tajuk syarahan, penghargaan.'),
- ('Bahagian 1 · Pengenalan & hubungan falsafah','1:12 – 3:43',[('00780','1:15','Label bahagian di penjuru kiri atas, 5 saat sahaja.'),('02235','3:40','Soalan utama ditonjolkan.')],
+ ('Bahagian 1 · Pengenalan & hubungan falsafah','1:12 – 3:43',[('00780','1:15','Peta syarahan.'),('02235','3:40','Soalan utama ditonjolkan.')],
   'Peta syarahan, imbasan Tugasan 2 (lima tradisi + FPK), isu pilihan dan persoalan utama.'),
- ('Bahagian 2 · Analisis kritis isu semasa','3:43 – 13:48',[('02415','3:44','Lokasi kedua. Label bahagian.'),('02585','4:01','Konsep Furnivall.'),('03860','5:57','Angka IPNas.'),('04575','7:09','Kajian belia Merdeka Center.'),('05355','8:19','Data 3R.'),('08135','12:50','Kesimpulan bukti.')],
+ ('Bahagian 2 · Analisis kritis isu semasa','3:43 – 13:48',[('02415','3:44','Lokasi kedua.'),('02585','4:01','Konsep Furnivall.'),('03860','5:57','Angka IPNas.'),('04575','7:09','Kajian belia Merdeka Center.'),('05355','8:19','Data 3R.'),('08135','12:50','Kesimpulan bukti.')],
   'Masyarakat majmuk, tiga lapisan isu, bukti (IPNas, Merdeka Center, 3R, enrolmen, ISIS), Allport, naratif mudah, had bukti, lensa konsep insan.'),
- ('Bahagian 3 · Cadangan penyelesaian: kerangka BINA','13:48 – 19:55',[('08780','13:50','Label bahagian.'),('08895','14:01','Huruf BINA ditonjolkan.'),('10725','16:57','Protokol SEMAK.')],
+ ('Bahagian 3 · Cadangan penyelesaian: kerangka BINA','13:48 – 19:55',[('08780','13:50','Lokasi ketiga. Permulaan cadangan.'),('08895','14:01','Huruf BINA ditonjolkan.'),('10725','16:57','Protokol SEMAK.')],
   'B, I, N, A satu per satu, pelan pelaksanaan, petunjuk kejayaan, tiga prinsip etika.'),
- ('Bahagian 4 · Rumusan & penutup','19:55 – 21:36',[('12695','19:57','Lokasi lif. Label bahagian.'),('13325','21:00','Pendirian ditonjolkan.')],
+ ('Bahagian 4 · Rumusan & penutup','19:55 – 21:36',[('12695','19:57','Lokasi lif.'),('13325','21:00','Pendirian ditonjolkan.')],
   'Rumusan, pendirian, penutup.'),
 ]
 sc=''
@@ -97,7 +97,6 @@ details ol li::marker{{color:var(--muted);font:.8rem var(--mono)}}
 <li><span>Sarikata</span><span>Putih, tebal sederhana, garis hitam nipis, di tengah bawah. Maksimum 2 baris.</span></li>
 <li><span>Keypoint</span><span>Ditebalkan dan berwarna <b class="k">kuning</b>: angka bukti, konsep teras, huruf BINA dan SEMAK, pendirian.</span></li>
 <li><span>Kad nama</span><span>Sekali sahaja di awal (6 saat), kiri bawah.</span></li>
-<li><span>Label bahagian</span><span>Kecil di kiri atas, 5 saat pada permulaan setiap bahagian (4 kali semuanya).</span></li>
 <li><span>Audio</span><span>Kelantangan diseragamkan ke tahap standard YouTube. Tiada muzik latar.</span></li>
 <li><span>Peralihan</span><span>Potongan terus. Fade masuk di awal dan fade keluar di akhir sahaja.</span></li>
 </ul></section>

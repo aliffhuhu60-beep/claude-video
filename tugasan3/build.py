@@ -63,7 +63,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 ev=[]
 for a,b,s,i in cues:
     ev.append(f"Dialogue: 0,{ts(a)},{ts(b)},Sub,,0,0,0,,{fmt(s)}")
-for i,lab in LABELS:
+for i,lab in []:  # label bahagian dibuang atas permintaan
     a=cstart[i]
     ev.append(f"Dialogue: 1,{ts(a)},{ts(a+5)},Label,,0,0,0,,{{\\fad(300,300)}}{{\\c{HL}}}●{{\\c&HFFFFFF&}}  {lab}")
 a=cstart[2]
