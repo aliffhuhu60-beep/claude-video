@@ -1,0 +1,347 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter SemiBold,52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,3.5,1.5,2,200,200,64,1
+Style: Label,Inter SemiBold,30,&H00FFFFFF,&H00FFFFFF,&H00000000,&H66000000,0,0,0,0,100,100,1,0,3,14,0,7,56,56,48,1
+Style: Name,Inter ExtraBold,44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H66000000,0,0,0,0,100,100,0,0,3,16,0,1,56,56,262,1
+Style: NameSub,Inter Medium,30,&H00FFFFFF,&H00FFFFFF,&H00000000,&H66000000,0,0,0,0,100,100,0,0,3,12,0,1,56,56,204,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.58,0:00:04.54,Sub,,0,0,0,,Assalamualaikum warahmatullahi wabarakatuh dan selamat sejahtera
+Dialogue: 0,0:00:04.56,0:00:09.52,Sub,,0,0,0,,kepada Puan Suzanna binti Zainudin yang saya hormati serta rakan-rakan sekalian.
+Dialogue: 0,0:00:09.54,0:00:14.46,Sub,,0,0,0,,Saya Mohamad Aliff bin Ahmad Shahabuddin, pelajar opsyen Bahasa Melayu Kumpulan 1,
+Dialogue: 0,0:00:14.48,0:00:16.72,Sub,,0,0,0,,ambilan Ogos 2025.
+Dialogue: 0,0:00:16.74,0:00:20.74,Sub,,0,0,0,,Syarahan saya bagi kursus MPU3152
+Dialogue: 0,0:00:20.76,0:00:23.10,Sub,,0,0,0,,Falsafah dan Cabaran Masa Depan ini
+Dialogue: 0,0:00:23.12,0:00:27.26,Sub,,0,0,0,,bertajuk {\c&H00D2FF&\fnInter ExtraBold}Daripada Konsep Insan kepada Bilik Darjah{\r}
+Dialogue: 0,0:00:27.28,0:00:28.76,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Inklusif{\r}:
+Dialogue: 0,0:00:28.78,0:00:32.90,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Merapatkan Jurang Interaksi Antara Etnik{\r} dalam Kalangan Murid.
+Dialogue: 0,0:00:32.92,0:00:37.19,Sub,,0,0,0,,Syarahan ini merupakan lanjutan daripada esei Tugasan 2 saya.
+Dialogue: 0,0:00:37.46,0:00:40.70,Sub,,0,0,0,,Sebelum memulakan syarahan,
+Dialogue: 0,0:00:40.72,0:00:44.76,Sub,,0,0,0,,izinkan saya merakamkan setinggi-tinggi penghargaan.
+Dialogue: 0,0:00:44.78,0:00:50.46,Sub,,0,0,0,,Syukur ke hadrat Ilahi kerana dengan izin-Nya tugasan ini dapat disiapkan.
+Dialogue: 0,0:00:50.48,0:00:54.22,Sub,,0,0,0,,Terima kasih yang tidak terhingga juga kepada pensyarah kursus ini,
+Dialogue: 0,0:00:54.24,0:00:57.42,Sub,,0,0,0,,iaitu Puan Suzanna binti Zainudin, atas bimbingan,
+Dialogue: 0,0:00:57.44,0:01:01.44,Sub,,0,0,0,,teguran dan tunjuk ajar yang diberikan sepanjang semester ini.
+Dialogue: 0,0:01:01.46,0:01:04.14,Sub,,0,0,0,,Penghargaan ini juga saya tujukan kepada
+Dialogue: 0,0:01:04.16,0:01:06.28,Sub,,0,0,0,,rakan-rakan Bahasa Melayu Kumpulan 1
+Dialogue: 0,0:01:06.30,0:01:08.72,Sub,,0,0,0,,yang sentiasa membantu dan berkongsi idea.
+Dialogue: 0,0:01:08.74,0:01:11.57,Sub,,0,0,0,,Baiklah, marilah kita mulakan syarahan.
+Dialogue: 0,0:01:12.16,0:01:14.14,Sub,,0,0,0,,Sebelum kita pergi lebih jauh,
+Dialogue: 0,0:01:14.16,0:01:17.70,Sub,,0,0,0,,izinkan saya menunjukkan peta perjalanan syarahan ini.
+Dialogue: 0,0:01:17.72,0:01:20.86,Sub,,0,0,0,,Kita akan bermula dengan {\c&H00D2FF&\fnInter ExtraBold}hubungan falsafah{\r},
+Dialogue: 0,0:01:20.88,0:01:24.58,Sub,,0,0,0,,kemudian beralih kepada {\c&H00D2FF&\fnInter ExtraBold}analisis kritis isu semasa{\r}
+Dialogue: 0,0:01:24.60,0:01:26.76,Sub,,0,0,0,,yang mengambil masa paling panjang.
+Dialogue: 0,0:01:26.78,0:01:30.50,Sub,,0,0,0,,Selepas itu, saya akan mengemukakan {\c&H00D2FF&\fnInter ExtraBold}cadangan penyelesaian{\r}
+Dialogue: 0,0:01:30.52,0:01:35.07,Sub,,0,0,0,,dan seterusnya menutup syarahan dengan {\c&H00D2FF&\fnInter ExtraBold}rumusan serta pendirian{\r} saya.
+Dialogue: 0,0:01:35.96,0:01:39.66,Sub,,0,0,0,,Baiklah, marilah kita imbas semula Tugasan 2.
+Dialogue: 0,0:01:39.68,0:01:44.72,Sub,,0,0,0,,Esei saya bertajuk {\c&H00D2FF&\fnInter ExtraBold}Konsep Insan dalam Pelbagai Tradisi Pemikiran{\r}
+Dialogue: 0,0:01:44.74,0:01:47.30,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}dan Perkaitannya dengan Falsafah Malaysia{\r}.
+Dialogue: 0,0:01:47.32,0:01:48.94,Sub,,0,0,0,,Dalam esei tersebut,
+Dialogue: 0,0:01:48.96,0:01:51.93,Sub,,0,0,0,,saya meneliti bagaimana manusia
+Dialogue: 0,0:01:52.52,0:01:56.78,Sub,,0,0,0,,difahami oleh pelbagai tradisi. Tradisi Islam,
+Dialogue: 0,0:01:56.80,0:02:01.82,Sub,,0,0,0,,misalnya, melihat insan sebagai {\c&H00D2FF&\fnInter ExtraBold}khalifah yang memikul amanah{\r}.
+Dialogue: 0,0:02:01.84,0:02:03.62,Sub,,0,0,0,,Tradisi Hindu pula
+Dialogue: 0,0:02:05.42,0:02:08.46,Sub,,0,0,0,,memahami insan melalui konsep {\c&H00D2FF&\fnInter ExtraBold}atman{\r},
+Dialogue: 0,0:02:08.48,0:02:10.54,Sub,,0,0,0,,iaitu jiwa yang kekal,
+Dialogue: 0,0:02:10.56,0:02:14.04,Sub,,0,0,0,,manakala ajaran Buddha menolak tanggapan diri
+Dialogue: 0,0:02:14.06,0:02:16.80,Sub,,0,0,0,,yang tetap melalui konsep {\c&H00D2FF&\fnInter ExtraBold}anatta{\r}.
+Dialogue: 0,0:02:16.82,0:02:24.58,Sub,,0,0,0,,Dalam Konfusianisme, {\c&H00D2FF&\fnInter ExtraBold}diri dibentuk melalui peranan dan hubungan sosial{\r}.
+Dialogue: 0,0:02:24.60,0:02:28.58,Sub,,0,0,0,,Sementara itu, pemikiran Barat moden
+Dialogue: 0,0:02:28.60,0:02:33.88,Sub,,0,0,0,,menonjolkan {\c&H00D2FF&\fnInter ExtraBold}autonomi individu{\r} yang kemudiannya diperhalusi
+Dialogue: 0,0:02:33.90,0:02:37.98,Sub,,0,0,0,,melalui gagasan {\c&H00D2FF&\fnInter ExtraBold}autonomi berasaskan hubungan{\r}.
+Dialogue: 0,0:02:38.00,0:02:42.90,Sub,,0,0,0,,Kesemua pandangan ini saya pertemukan dalam {\c&H00D2FF&\fnInter ExtraBold}Falsafah Pendidikan Kebangsaan{\r}
+Dialogue: 0,0:02:42.92,0:02:45.32,Sub,,0,0,0,,yang menjadi landasan nilai bersama
+Dialogue: 0,0:02:45.34,0:02:50.91,Sub,,0,0,0,,untuk membentuk insan yang seimbang dari segi {\c&H00D2FF&\fnInter ExtraBold}jasmani, emosi, rohani dan intelek{\r}.
+Dialogue: 0,0:02:53.62,0:02:58.81,Sub,,0,0,0,,Persoalannya, apakah kaitan kerangka ini dengan isu semasa pendidikan?
+Dialogue: 0,0:02:58.88,0:03:01.66,Sub,,0,0,0,,Jika kita merujuk jadual padanan tugasan,
+Dialogue: 0,0:03:01.68,0:03:05.44,Sub,,0,0,0,,subtopik faham insan dalam pelbagai tradisi pemikiran
+Dialogue: 0,0:03:05.46,0:03:07.72,Sub,,0,0,0,,bersambung terus dengan {\c&H00D2FF&\fnInter ExtraBold}Topik 11{\r},
+Dialogue: 0,0:03:07.74,0:03:12.22,Sub,,0,0,0,,iaitu {\c&H00D2FF&\fnInter ExtraBold}konsep masyarakat majmuk dan kepelbagaian etnik{\r}.
+Dialogue: 0,0:03:12.24,0:03:14.02,Sub,,0,0,0,,Hubungannya cukup jelas.
+Dialogue: 0,0:03:14.04,0:03:17.04,Sub,,0,0,0,,Tradisi-tradisi yang saya bincangkan dalam Tugasan 2
+Dialogue: 0,0:03:17.06,0:03:19.68,Sub,,0,0,0,,bukan sekadar teori di dalam buku.
+Dialogue: 0,0:03:19.70,0:03:25.14,Sub,,0,0,0,,Tradisi inilah yang dibawa oleh murid kita setiap hari ke dalam bilik darjah.
+Dialogue: 0,0:03:25.16,0:03:28.44,Sub,,0,0,0,,Oleh sebab itu, isu yang saya pilih ialah
+Dialogue: 0,0:03:28.46,0:03:33.18,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}jurang interaksi dan stereotaip antara etnik{\r} dalam kalangan murid.
+Dialogue: 0,0:03:33.20,0:03:36.60,Sub,,0,0,0,,Dengan kata lain, saya ingin menyoal satu perkara:
+Dialogue: 0,0:03:36.62,0:03:39.90,Sub,,0,0,0,,adakah murid kita {\c&H00D2FF&\fnInter ExtraBold}benar-benar hidup bersama{\r},
+Dialogue: 0,0:03:39.92,0:03:42.99,Sub,,0,0,0,,atau {\c&H00D2FF&\fnInter ExtraBold}sekadar belajar di bawah bumbung yang sama{\r}?
+Dialogue: 0,0:03:43.28,0:03:45.50,Sub,,0,0,0,,Untuk memahami isu ini,
+Dialogue: 0,0:03:45.52,0:03:49.64,Sub,,0,0,0,,kita perlu bermula dengan konsep masyarakat majmuk itu sendiri.
+Dialogue: 0,0:03:49.66,0:03:54.30,Sub,,0,0,0,,Istilah ini dipopularkan oleh {\c&H00D2FF&\fnInter ExtraBold}Furnivall{\r} pada tahun 1948
+Dialogue: 0,0:03:54.32,0:03:58.78,Sub,,0,0,0,,yang menggambarkan masyarakat majmuk di Asia Tenggara
+Dialogue: 0,0:03:58.80,0:04:02.30,Sub,,0,0,0,,pada zaman kolonial sebagai kelompok yang {\c&H00D2FF&\fnInter ExtraBold}bercampur{\r}
+Dialogue: 0,0:04:02.32,0:04:03.80,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}tetapi tidak bergabung{\r}.
+Dialogue: 0,0:04:03.82,0:04:08.26,Sub,,0,0,0,,Menurut beliau, setiap kelompok berpegang pada agama,
+Dialogue: 0,0:04:08.28,0:04:10.72,Sub,,0,0,0,,budaya dan bahasanya sendiri,
+Dialogue: 0,0:04:10.74,0:04:14.71,Sub,,0,0,0,,dan mereka hanya bertemu di pasar untuk berjual beli sahaja.
+Dialogue: 0,0:04:15.23,0:04:19.08,Sub,,0,0,0,,Di Malaysia, kepelbagaian hadir dalam pelbagai bentuk,
+Dialogue: 0,0:04:19.10,0:04:25.64,Sub,,0,0,0,,iaitu {\c&H00D2FF&\fnInter ExtraBold}etnik, agama, bahasa, budaya, wilayah dan kelas sosial{\r}.
+Dialogue: 0,0:04:25.66,0:04:29.50,Sub,,0,0,0,,Namun begitu, kepelbagaian bukanlah satu masalah.
+Dialogue: 0,0:04:29.52,0:04:32.52,Sub,,0,0,0,,Shamsul Amri Baharuddin pada tahun 2012
+Dialogue: 0,0:04:32.54,0:04:38.36,Sub,,0,0,0,,menggambarkan hubungan etnik di Malaysia berada dalam
+Dialogue: 0,0:04:38.38,0:04:44.22,Sub,,0,0,0,,keadaan {\c&H00D2FF&\fnInter ExtraBold}ketegangan yang stabil{\r} dan menekankan {\c&H00D2FF&\fnInter ExtraBold}kesepaduan dalam kepelbagaian{\r},
+Dialogue: 0,0:04:44.24,0:04:46.14,Sub,,0,0,0,,bukannya keseragaman.
+Dialogue: 0,0:04:46.16,0:04:48.92,Sub,,0,0,0,,Maka, cabaran sebenar kita ialah
+Dialogue: 0,0:04:48.94,0:04:52.68,Sub,,0,0,0,,memastikan sekolah tidak mengulangi gambaran Furnivall,
+Dialogue: 0,0:04:52.70,0:04:55.76,Sub,,0,0,0,,iaitu murid kita bertemu setiap hari
+Dialogue: 0,0:04:55.78,0:04:58.19,Sub,,0,0,0,,tetapi {\c&H00D2FF&\fnInter ExtraBold}tidak benar-benar bersatu{\r}.
+Dialogue: 0,0:04:59.52,0:05:01.96,Sub,,0,0,0,,Jadi, di manakah jurangnya?
+Dialogue: 0,0:05:01.98,0:05:07.46,Sub,,0,0,0,,Pada pandangan saya, jurang ini terbentuk daripada {\c&H00D2FF&\fnInter ExtraBold}tiga lapisan{\r} yang saling berkait.
+Dialogue: 0,0:05:07.48,0:05:11.86,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Lapisan struktur{\r} merujuk kepada sekolah dan kawasan kejiranan
+Dialogue: 0,0:05:11.88,0:05:16.84,Sub,,0,0,0,,yang semakin didominasi oleh satu kaum sahaja.
+Dialogue: 0,0:05:16.86,0:05:21.46,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Lapisan pedagogi{\r} pula berkait dengan andaian dan stereotaip guru,
+Dialogue: 0,0:05:21.48,0:05:24.12,Sub,,0,0,0,,seperti yang telah saya sentuh dalam Tugasan 2.
+Dialogue: 0,0:05:24.14,0:05:27.64,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Lapisan digital{\r} pula melibatkan media sosial
+Dialogue: 0,0:05:27.66,0:05:32.16,Sub,,0,0,0,,yang menyebarkan kandungan berunsur kaum dan agama
+Dialogue: 0,0:05:32.18,0:05:35.72,Sub,,0,0,0,,dengan begitu pantas. Hal ini berlaku walaupun
+Dialogue: 0,0:05:35.74,0:05:40.18,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}perpaduan{\r} telah dijadikan {\c&H00D2FF&\fnInter ExtraBold}prinsip asas{\r} dalam Rancangan Pendidikan Malaysia
+Dialogue: 0,0:05:40.20,0:05:42.84,Sub,,0,0,0,,2026 hingga 2035.
+Dialogue: 0,0:05:42.86,0:05:47.64,Sub,,0,0,0,,Sebagai permulaan, kita lihat {\c&H00D2FF&\fnInter ExtraBold}Indeks Perpaduan Nasional{\r} atau IPNas.
+Dialogue: 0,0:05:47.66,0:05:55.56,Sub,,0,0,0,,Skor IPNas meningkat daripada {\c&H00D2FF&\fnInter ExtraBold}0.567{\r} pada 2018 kepada {\c&H00D2FF&\fnInter ExtraBold}0.629{\r}
+Dialogue: 0,0:05:55.58,0:06:00.88,Sub,,0,0,0,,pada tahun 2022, dan seterusnya mencecah {\c&H00D2FF&\fnInter ExtraBold}0.701{\r}
+Dialogue: 0,0:06:00.90,0:06:05.66,Sub,,0,0,0,,pada tahun 2025, menurut The Borneo Post pada tahun 2026.
+Dialogue: 0,0:06:05.68,0:06:09.20,Sub,,0,0,0,,Sepintas lalu, trend ini amat menggalakkan.
+Dialogue: 0,0:06:09.22,0:06:14.82,Sub,,0,0,0,,Walau bagaimanapun, skor 0.701 ini masih berada {\c&H00D2FF&\fnInter ExtraBold}di bawah{\r}
+Dialogue: 0,0:06:14.84,0:06:18.13,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}ambang tahap tinggi{\r}, iaitu {\c&H00D2FF&\fnInter ExtraBold}0.75{\r}.
+Dialogue: 0,0:06:18.92,0:06:23.44,Sub,,0,0,0,,Lebih menarik lagi, skor ini {\c&H00D2FF&\fnInter ExtraBold}tidak sekata antara negeri{\r}.
+Dialogue: 0,0:06:23.46,0:06:28.96,Sub,,0,0,0,,Kedah, misalnya, mencatatkan skor terendah, iaitu {\c&H00D2FF&\fnInter ExtraBold}0.593{\r},
+Dialogue: 0,0:06:28.98,0:06:31.72,Sub,,0,0,0,,menurut Free Malaysia Today pada tahun 2026.
+Dialogue: 0,0:06:31.74,0:06:34.70,Sub,,0,0,0,,Ringkasnya, perpaduan kita {\c&H00D2FF&\fnInter ExtraBold}semakin baik{\r},
+Dialogue: 0,0:06:34.72,0:06:38.35,Sub,,0,0,0,,tetapi {\c&H00D2FF&\fnInter ExtraBold}belum kukuh dan belum merata{\r}.
+Dialogue: 0,0:06:39.45,0:06:44.75,Sub,,0,0,0,,Sementara itu, suara golongan muda memberikan gambaran
+Dialogue: 0,0:06:44.77,0:06:47.01,Sub,,0,0,0,,yang lebih membimbangkan.
+Dialogue: 0,0:06:47.03,0:06:51.91,Sub,,0,0,0,,Kajian Belia Kebangsaan Merdeka Center pada tahun 2024
+Dialogue: 0,0:06:51.93,0:06:58.36,Sub,,0,0,0,,yang melibatkan {\c&H00D2FF&\fnInter ExtraBold}1,605 belia{\r} berumur 18 hingga 30 tahun
+Dialogue: 0,0:06:58.89,0:07:04.21,Sub,,0,0,0,,mendapati peratusan belia Cina dan India yang merasakan
+Dialogue: 0,0:07:04.23,0:07:07.57,Sub,,0,0,0,,komuniti mereka {\c&H00D2FF&\fnInter ExtraBold}dilayan secara tidak adil{\r}
+Dialogue: 0,0:07:07.59,0:07:13.08,Sub,,0,0,0,,meningkat daripada {\c&H00D2FF&\fnInter ExtraBold}43%{\r} kepada {\c&H00D2FF&\fnInter ExtraBold}58%{\r}
+Dialogue: 0,0:07:13.63,0:07:16.19,Sub,,0,0,0,,dalam tempoh setahun sahaja.
+Dialogue: 0,0:07:16.21,0:07:19.97,Sub,,0,0,0,,Ibrahim Suffian dari Merdeka Center pula mengaitkan
+Dialogue: 0,0:07:19.99,0:07:29.78,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}kepercayaan antara etnik yang rendah{\r} dengan {\c&H00D2FF&\fnInter ExtraBold}ketiadaan jiran{\r}
+Dialogue: 0,0:07:29.80,0:07:32.69,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}dan rakan sekolah daripada etnik lain{\r}.
+Dialogue: 0,0:07:33.06,0:07:37.12,Sub,,0,0,0,,Ingatlah, belia inilah murid sekolah kita
+Dialogue: 0,0:07:37.14,0:07:39.13,Sub,,0,0,0,,beberapa tahun yang lalu.
+Dialogue: 0,0:07:40.99,0:07:46.81,Sub,,0,0,0,,Dalam masa yang sama, {\c&H00D2FF&\fnInter ExtraBold}ruang digital{\r} pula semakin panas.
+Dialogue: 0,0:07:46.83,0:07:50.73,Sub,,0,0,0,,Menurut Timbalan Menteri Komunikasi, Teo Nie Ching,
+Dialogue: 0,0:07:50.75,0:07:56.81,Sub,,0,0,0,,kandungan berkaitan isu {\c&H00D2FF&\fnInter ExtraBold}3R{\r}, iaitu kaum, agama dan institusi diraja,
+Dialogue: 0,0:07:56.83,0:08:01.44,Sub,,0,0,0,,yang diturunkan oleh MCMC melonjak daripada {\c&H00D2FF&\fnInter ExtraBold}175{\r}
+Dialogue: 0,0:08:01.48,0:08:07.72,Sub,,0,0,0,,pada tahun 2022 kepada {\c&H00D2FF&\fnInter ExtraBold}4,830{\r} pada tahun 2024,
+Dialogue: 0,0:08:10.67,0:08:15.38,Sub,,0,0,0,,sebelum menurun kepada {\c&H00D2FF&\fnInter ExtraBold}1,504{\r} pada tahun 2025.
+Dialogue: 0,0:08:15.90,0:08:17.72,Sub,,0,0,0,,Secara keseluruhannya,
+Dialogue: 0,0:08:17.75,0:08:22.95,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}8,540 kandungan{\r} telah diturunkan sejak tahun 2022.
+Dialogue: 0,0:08:22.97,0:08:27.23,Sub,,0,0,0,,Hakikatnya, murid kita ialah pengguna aktif media sosial.
+Dialogue: 0,0:08:27.25,0:08:31.93,Sub,,0,0,0,,Maka, stereotaip kini bukan lagi dipelajari di rumah semata-mata,
+Dialogue: 0,0:08:31.95,0:08:37.00,Sub,,0,0,0,,tetapi {\c&H00D2FF&\fnInter ExtraBold}disuap oleh algoritma{\r} setiap hari.
+Dialogue: 0,0:08:37.67,0:08:42.65,Sub,,0,0,0,,Seterusnya, kita lihat corak persekolahan. Data enrolmen
+Dialogue: 0,0:08:42.67,0:08:44.65,Sub,,0,0,0,,yang dibentangkan di Parlimen
+Dialogue: 0,0:08:44.67,0:08:48.20,Sub,,0,0,0,,menunjukkan bahawa peratusan murid Bumiputera di
+Dialogue: 0,0:08:48.35,0:08:49.61,Sub,,0,0,0,,Sekolah Jenis Kebangsaan Cina
+Dialogue: 0,0:08:49.63,0:08:54.83,Sub,,0,0,0,,meningkat daripada {\c&H00D2FF&\fnInter ExtraBold}11.67%{\r} pada tahun 2014
+Dialogue: 0,0:08:54.85,0:08:59.31,Sub,,0,0,0,,kepada {\c&H00D2FF&\fnInter ExtraBold}18.52%{\r} pada tahun 2024.
+Dialogue: 0,0:08:59.33,0:09:02.35,Sub,,0,0,0,,Sebaliknya, Sekolah Jenis Kebangsaan Tamil
+Dialogue: 0,0:09:02.37,0:09:06.23,Sub,,0,0,0,,masih hampir keseluruhannya terdiri daripada murid India,
+Dialogue: 0,0:09:06.25,0:09:12.11,Sub,,0,0,0,,manakala {\c&H00D2FF&\fnInter ExtraBold}kemasukan murid bukan Bumiputera{\r}
+Dialogue: 0,0:09:12.13,0:09:15.21,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}ke Sekolah Kebangsaan semakin menurun{\r}.
+Dialogue: 0,0:09:15.23,0:09:17.21,Sub,,0,0,0,,Dalam konteks yang sama,
+Dialogue: 0,0:09:17.23,0:09:21.25,Sub,,0,0,0,,kajian ISIS Malaysia oleh Chong pada tahun 2024
+Dialogue: 0,0:09:21.27,0:09:23.69,Sub,,0,0,0,,mendapati pelajar universiti
+Dialogue: 0,0:09:23.71,0:09:28.97,Sub,,0,0,0,,yang membesar di kawasan yang penduduknya daripada etnik yang sama
+Dialogue: 0,0:09:28.99,0:09:33.62,Sub,,0,0,0,,lebih cenderung {\c&H00D2FF&\fnInter ExtraBold}berkawan dalam kelompok tersendiri{\r}.
+Dialogue: 0,0:09:34.75,0:09:38.09,Sub,,0,0,0,,Menariknya, penggunaan {\c&H00D2FF&\fnInter ExtraBold}bahasa kebangsaan{\r}
+Dialogue: 0,0:09:38.11,0:09:42.46,Sub,,0,0,0,,didapati {\c&H00D2FF&\fnInter ExtraBold}mengurangkan kecenderungan tersebut{\r}.
+Dialogue: 0,0:09:42.48,0:09:45.56,Sub,,0,0,0,,Setelah meneliti bukti-bukti ini,
+Dialogue: 0,0:09:45.58,0:09:48.12,Sub,,0,0,0,,timbul satu persoalan yang penting:
+Dialogue: 0,0:09:48.14,0:09:53.93,Sub,,0,0,0,,adakah memadai jika murid pelbagai kaum {\c&H00D2FF&\fnInter ExtraBold}sekadar berada di sekolah yang sama{\r}?
+Dialogue: 0,0:09:53.98,0:09:55.18,Sub,,0,0,0,,Jawapannya, {\c&H00D2FF&\fnInter ExtraBold}tidak{\r}.
+Dialogue: 0,0:09:55.20,0:10:00.54,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Hipotesis Hubungan{\r} yang dikemukakan oleh {\c&H00D2FF&\fnInter ExtraBold}Allport{\r} pada tahun 1954
+Dialogue: 0,0:10:00.56,0:10:04.50,Sub,,0,0,0,,menegaskan bahawa pertembungan antara kumpulan
+Dialogue: 0,0:10:04.52,0:10:10.00,Sub,,0,0,0,,hanya mengurangkan prasangka apabila wujud {\c&H00D2FF&\fnInter ExtraBold}status yang setara{\r},
+Dialogue: 0,0:10:10.02,0:10:15.26,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}matlamat bersama{\r}, {\c&H00D2FF&\fnInter ExtraBold}kerjasama{\r} dan {\c&H00D2FF&\fnInter ExtraBold}sokongan pihak berautoriti{\r}.
+Dialogue: 0,0:10:15.28,0:10:17.82,Sub,,0,0,0,,Dapatan ini diperkukuh oleh
+Dialogue: 0,0:10:17.84,0:10:22.42,Sub,,0,0,0,,analisis Pettigrew dan Tropp pada tahun 2006
+Dialogue: 0,0:10:22.44,0:10:27.90,Sub,,0,0,0,,terhadap {\c&H00D2FF&\fnInter ExtraBold}515 kajian{\r} yang mendapati hubungan antara kumpulan
+Dialogue: 0,0:10:27.92,0:10:30.94,Sub,,0,0,0,,memang mengurangkan prasangka,
+Dialogue: 0,0:10:30.96,0:10:35.32,Sub,,0,0,0,,dan kesannya {\c&H00D2FF&\fnInter ExtraBold}lebih kuat apabila syarat-syarat tersebut dipenuhi{\r}.
+Dialogue: 0,0:10:35.34,0:10:38.48,Sub,,0,0,0,,Inilah sebabnya murid yang duduk berkelompok
+Dialogue: 0,0:10:38.50,0:10:42.46,Sub,,0,0,0,,mengikut kaum di kantin dan di dalam kelas
+Dialogue: 0,0:10:42.48,0:10:45.54,Sub,,0,0,0,,sebenarnya sedang mengulangi gambaran Furnivall:
+Dialogue: 0,0:10:45.56,0:10:48.89,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}bercampur tetapi tidak bergabung{\r}.
+Dialogue: 0,0:10:50.11,0:10:53.59,Sub,,0,0,0,,Di samping itu, kita juga perlu berhati-hati
+Dialogue: 0,0:10:53.61,0:10:55.99,Sub,,0,0,0,,dengan {\c&H00D2FF&\fnInter ExtraBold}naratif yang terlalu mudah{\r}.
+Dialogue: 0,0:10:56.01,0:10:58.73,Sub,,0,0,0,,Wacana awam sering menuding jari
+Dialogue: 0,0:10:58.75,0:11:04.61,Sub,,0,0,0,,kepada sekolah vernakular sebagai punca utama polarisasi.
+Dialogue: 0,0:11:04.63,0:11:09.65,Sub,,0,0,0,,Akan tetapi, data tadi menunjukkan gambaran yang lebih kompleks,
+Dialogue: 0,0:11:09.67,0:11:13.25,Sub,,0,0,0,,kerana Sekolah Jenis Kebangsaan Cina
+Dialogue: 0,0:11:13.27,0:11:16.55,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}semakin pelbagai{\r}, sedangkan Sekolah Kebangsaan
+Dialogue: 0,0:11:16.57,0:11:19.69,Sub,,0,0,0,,pula {\c&H00D2FF&\fnInter ExtraBold}semakin kurang kepelbagaian kaumnya{\r}.
+Dialogue: 0,0:11:19.71,0:11:22.97,Sub,,0,0,0,,Hal yang sama berlaku kepada program sedia ada.
+Dialogue: 0,0:11:22.99,0:11:27.41,Sub,,0,0,0,,Rancangan Integrasi Murid untuk Perpaduan atau {\c&H00D2FF&\fnInter ExtraBold}RIMUP{\r}
+Dialogue: 0,0:11:27.43,0:11:30.57,Sub,,0,0,0,,telah dilaksanakan sejak tahun 1986.
+Dialogue: 0,0:11:30.59,0:11:35.79,Sub,,0,0,0,,Namun, jika program ini sekadar acara sehari,
+Dialogue: 0,0:11:35.81,0:11:39.97,Sub,,0,0,0,,ia berisiko menjadi {\c&H00D2FF&\fnInter ExtraBold}perpaduan bermusim{\r}
+Dialogue: 0,0:11:39.99,0:11:43.67,Sub,,0,0,0,,yang tidak memenuhi syarat kerjasama yang berterusan.
+Dialogue: 0,0:11:43.69,0:11:49.75,Sub,,0,0,0,,Pada hemat saya, masalah utamanya {\c&H00D2FF&\fnInter ExtraBold}bukan sekadar ketiadaan dasar{\r},
+Dialogue: 0,0:11:49.77,0:11:53.68,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}tetapi kualiti pelaksanaan di peringkat bilik darjah{\r}.
+Dialogue: 0,0:11:54.96,0:11:57.54,Sub,,0,0,0,,Walau bagaimanapun, sebagai bakal guru,
+Dialogue: 0,0:11:57.56,0:12:01.62,Sub,,0,0,0,,saya juga perlu {\c&H00D2FF&\fnInter ExtraBold}bersikap adil terhadap bukti itu sendiri{\r},
+Dialogue: 0,0:12:01.64,0:12:04.68,Sub,,0,0,0,,sama seperti sikap kritis yang saya amalkan
+Dialogue: 0,0:12:04.70,0:12:07.87,Sub,,0,0,0,,semasa menilai kajian Salleh pada tahun 2022
+Dialogue: 0,0:12:08.24,0:12:10.25,Sub,,0,0,0,,dalam Tugasan 2.
+Dialogue: 0,0:12:10.80,0:12:14.46,Sub,,0,0,0,,IPNas ialah indeks peringkat nasional,
+Dialogue: 0,0:12:14.48,0:12:18.92,Sub,,0,0,0,,maka peningkatannya tidak semestinya
+Dialogue: 0,0:12:18.94,0:12:21.74,Sub,,0,0,0,,menggambarkan suasana di dalam bilik darjah.
+Dialogue: 0,0:12:21.76,0:12:25.44,Sub,,0,0,0,,Kajian Merdeka Center pula mengukur {\c&H00D2FF&\fnInter ExtraBold}persepsi{\r},
+Dialogue: 0,0:12:25.46,0:12:27.96,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}bukan bukti diskriminasi{\r},
+Dialogue: 0,0:12:27.98,0:12:32.74,Sub,,0,0,0,,walaupun persepsi tetap mempengaruhi kepercayaan.
+Dialogue: 0,0:12:32.76,0:12:34.62,Sub,,0,0,0,,Begitu juga dengan data 3R.
+Dialogue: 0,0:12:34.64,0:12:38.38,Sub,,0,0,0,,Ia lebih mencerminkan {\c&H00D2FF&\fnInter ExtraBold}intensiti penguatkuasaan{\r}
+Dialogue: 0,0:12:38.40,0:12:42.36,Sub,,0,0,0,,berbanding jumlah sebenar kandungan perkauman.
+Dialogue: 0,0:12:42.38,0:12:45.96,Sub,,0,0,0,,Meskipun setiap sumber ada hadnya,
+Dialogue: 0,0:12:45.98,0:12:47.88,Sub,,0,0,0,,apabila dibaca bersama,
+Dialogue: 0,0:12:47.90,0:12:50.04,Sub,,0,0,0,,sumber-sumber ini menunjukkan arah yang sama:
+Dialogue: 0,0:12:50.06,0:12:53.88,Sub,,0,0,0,,perpaduan kita {\c&H00D2FF&\fnInter ExtraBold}stabil tetapi masih lagi cetek{\r}.
+Dialogue: 0,0:12:54.67,0:12:57.67,Sub,,0,0,0,,Bertitik tolak daripada analisis ini,
+Dialogue: 0,0:12:57.69,0:13:00.79,Sub,,0,0,0,,mari kita kembali melihat kerangka konsep insan.
+Dialogue: 0,0:13:00.81,0:13:04.05,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}Surah al-Hujurat ayat 13{\r} menyatakan
+Dialogue: 0,0:13:04.07,0:13:08.27,Sub,,0,0,0,,bahawa manusia dijadikan berbangsa-bangsa dan bersuku-suku
+Dialogue: 0,0:13:08.29,0:13:09.89,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}supaya saling mengenali{\r}.
+Dialogue: 0,0:13:09.91,0:13:12.91,Sub,,0,0,0,,Konsep {\c&H00D2FF&\fnInter ExtraBold}atman{\r} dalam tradisi Hindu mengiktiraf
+Dialogue: 0,0:13:12.93,0:13:14.93,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}martabat rohani{\r} setiap insan,
+Dialogue: 0,0:13:14.95,0:13:18.73,Sub,,0,0,0,,manakala konsep {\c&H00D2FF&\fnInter ExtraBold}anatta{\r} dalam Buddha mengajak kita
+Dialogue: 0,0:13:18.75,0:13:22.57,Sub,,0,0,0,,melepaskan keterikatan kepada ego,
+Dialogue: 0,0:13:22.59,0:13:25.05,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}termasuk ego kelompok{\r}.
+Dialogue: 0,0:13:25.07,0:13:29.65,Sub,,0,0,0,,Konfusianisme dan autonomi berasaskan hubungan pula
+Dialogue: 0,0:13:29.67,0:13:34.09,Sub,,0,0,0,,mengingatkan bahawa {\c&H00D2FF&\fnInter ExtraBold}diri berkembang melalui hubungan dengan orang lain{\r}.
+Dialogue: 0,0:13:34.11,0:13:38.21,Sub,,0,0,0,,Justeru, apabila murid membesar dalam {\c&H00D2FF&\fnInter ExtraBold}gelembung etnik{\r},
+Dialogue: 0,0:13:38.23,0:13:40.51,Sub,,0,0,0,,mereka bukan sekadar kurang bergaul,
+Dialogue: 0,0:13:40.53,0:13:44.39,Sub,,0,0,0,,malah {\c&H00D2FF&\fnInter ExtraBold}terlepas sebahagian proses untuk menjadi insan yang seimbang{\r},
+Dialogue: 0,0:13:44.41,0:13:48.84,Sub,,0,0,0,,seperti yang dihasratkan oleh Falsafah Pendidikan Kebangsaan.
+Dialogue: 0,0:13:48.94,0:13:54.00,Sub,,0,0,0,,Jadi, apakah yang boleh dilakukan oleh seorang pendidik?
+Dialogue: 0,0:13:54.02,0:13:57.86,Sub,,0,0,0,,Di sini, saya mencadangkan kerangka yang saya namakan
+Dialogue: 0,0:13:57.88,0:13:59.28,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}B-I-N-A{\r}.
+Dialogue: 0,0:13:59.30,0:14:03.98,Sub,,0,0,0,,BINA: huruf {\c&H00D2FF&\fnInter ExtraBold}B{\r} mewakili {\c&H00D2FF&\fnInter ExtraBold}Bilik darjah responsif budaya{\r},
+Dialogue: 0,0:14:04.00,0:14:06.46,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}I{\r} bagi {\c&H00D2FF&\fnInter ExtraBold}Interaksi bermakna{\r},
+Dialogue: 0,0:14:06.48,0:14:09.30,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}N{\r} bagi {\c&H00D2FF&\fnInter ExtraBold}Nilai dan literasi digital{\r},
+Dialogue: 0,0:14:09.32,0:14:15.04,Sub,,0,0,0,,manakala {\c&H00D2FF&\fnInter ExtraBold}A{\r} pula bagi {\c&H00D2FF&\fnInter ExtraBold}Akauntabiliti dan kolaborasi komuniti{\r}.
+Dialogue: 0,0:14:15.06,0:14:18.26,Sub,,0,0,0,,Setiap strategi ini direka supaya {\c&H00D2FF&\fnInter ExtraBold}konkrit{\r},
+Dialogue: 0,0:14:18.28,0:14:21.92,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}praktikal{\r} untuk guru biasa dan {\c&H00D2FF&\fnInter ExtraBold}beretika{\r},
+Dialogue: 0,0:14:21.94,0:14:25.84,Sub,,0,0,0,,lalu menghormati kepercayaan murid tanpa memaksa
+Dialogue: 0,0:14:25.86,0:14:28.41,Sub,,0,0,0,,sesiapa melepaskan identiti mereka.
+Dialogue: 0,0:14:29.47,0:14:34.10,Sub,,0,0,0,,Mari kita mulakan dengan {\c&H00D2FF&\fnInter ExtraBold}bilik darjah responsif budaya{\r}.
+Dialogue: 0,0:14:34.12,0:14:36.38,Sub,,0,0,0,,Menurut Gay pada tahun 2018,
+Dialogue: 0,0:14:36.40,0:14:41.34,Sub,,0,0,0,,pedagogi responsif budaya menggunakan latar budaya murid
+Dialogue: 0,0:14:41.36,0:14:44.40,Sub,,0,0,0,,sebagai jambatan kepada pembelajaran.
+Dialogue: 0,0:14:44.42,0:14:47.95,Sub,,0,0,0,,Dalam amalan, guru boleh membentuk kumpulan
+Dialogue: 0,0:14:48.28,0:14:51.97,Sub,,0,0,0,,heterogen menggunakan {\c&H00D2FF&\fnInter ExtraBold}teknik Jigsaw{\r},
+Dialogue: 0,0:14:52.46,0:14:55.98,Sub,,0,0,0,,iaitu setiap murid memegang satu bahagian maklumat
+Dialogue: 0,0:14:56.00,0:14:58.10,Sub,,0,0,0,,yang diperlukan oleh kumpulannya.
+Dialogue: 0,0:14:58.12,0:15:01.66,Sub,,0,0,0,,Dengan cara ini, semua murid {\c&H00D2FF&\fnInter ExtraBold}berstatus setara{\r}
+Dialogue: 0,0:15:01.68,0:15:06.06,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}dan saling bergantung{\r}, tepat seperti
+Dialogue: 0,0:15:06.08,0:15:07.34,Sub,,0,0,0,,syarat Allport.
+Dialogue: 0,0:15:07.36,0:15:10.44,Sub,,0,0,0,,Selain itu, bahan pengajaran boleh
+Dialogue: 0,0:15:10.46,0:15:18.35,Sub,,0,0,0,,memuatkan nama, perayaan dan cerita daripada pelbagai komuniti.
+Dialogue: 0,0:15:18.37,0:15:20.51,Sub,,0,0,0,,Yang tidak kurang penting,
+Dialogue: 0,0:15:20.53,0:15:24.81,Sub,,0,0,0,,guru perlu melakukan {\c&H00D2FF&\fnInter ExtraBold}audit bias kendiri{\r}:
+Dialogue: 0,0:15:24.83,0:15:28.39,Sub,,0,0,0,,siapakah yang selalu saya panggil untuk menjawab,
+Dialogue: 0,0:15:28.41,0:15:34.25,Sub,,0,0,0,,siapakah yang kerap saya tegur, dan apakah andaian saya tentang murid itu?
+Dialogue: 0,0:15:34.27,0:15:38.83,Sub,,0,0,0,,Seterusnya, {\c&H00D2FF&\fnInter ExtraBold}interaksi bermakna{\r} merentas kumpulan.
+Dialogue: 0,0:15:38.85,0:15:42.73,Sub,,0,0,0,,Daripada menjadikan RIMUP sebagai acara sehari,
+Dialogue: 0,0:15:42.75,0:15:47.93,Sub,,0,0,0,,saya cadangkan {\c&H00D2FF&\fnInter ExtraBold}projek berasaskan masalah selama 10 minggu{\r}
+Dialogue: 0,0:15:47.95,0:15:54.01,Sub,,0,0,0,,yang menggabungkan Sekolah Kebangsaan dan Sekolah Jenis Kebangsaan yang berdekatan.
+Dialogue: 0,0:15:54.03,0:15:58.51,Sub,,0,0,0,,Sebagai contoh, murid daripada tiga sekolah boleh bersama-sama
+Dialogue: 0,0:15:58.53,0:16:01.51,Sub,,0,0,0,,menghasilkan {\c&H00D2FF&\fnInter ExtraBold}"Peta Warisan Kejiranan Kita"{\r}
+Dialogue: 0,0:16:01.53,0:16:05.95,Sub,,0,0,0,,dengan mendokumentasikan makanan, rumah ibadat
+Dialogue: 0,0:16:05.97,0:16:08.55,Sub,,0,0,0,,dan kisah warga emas di kawasan mereka.
+Dialogue: 0,0:16:08.57,0:16:12.17,Sub,,0,0,0,,Projek seperti inilah yang mempunyai {\c&H00D2FF&\fnInter ExtraBold}matlamat bersama{\r},
+Dialogue: 0,0:16:12.19,0:16:14.51,Sub,,0,0,0,,memerlukan {\c&H00D2FF&\fnInter ExtraBold}kerjasama berterusan{\r}
+Dialogue: 0,0:16:14.53,0:16:16.65,Sub,,0,0,0,,dan mendapat {\c&H00D2FF&\fnInter ExtraBold}sokongan pentadbir{\r}.
+Dialogue: 0,0:16:16.67,0:16:18.91,Sub,,0,0,0,,Dalam rutin harian pula,
+Dialogue: 0,0:16:18.93,0:16:23.11,Sub,,0,0,0,,guru boleh menggunakan {\c&H00D2FF&\fnInter ExtraBold}pelan tempat duduk berputar{\r}
+Dialogue: 0,0:16:23.13,0:16:25.73,Sub,,0,0,0,,dan {\c&H00D2FF&\fnInter ExtraBold}kumpulan kokurikulum bercampur{\r}
+Dialogue: 0,0:16:25.75,0:16:30.48,Sub,,0,0,0,,supaya interaksi berlaku {\c&H00D2FF&\fnInter ExtraBold}setiap hari, bukan setahun sekali sahaja{\r}.
+Dialogue: 0,0:16:31.77,0:16:36.45,Sub,,0,0,0,,Di samping itu, kita perlu membina {\c&H00D2FF&\fnInter ExtraBold}nilai dan literasi digital{\r}.
+Dialogue: 0,0:16:36.47,0:16:41.57,Sub,,0,0,0,,Memandangkan kandungan 3R pernah memuncak pada tahun 2024,
+Dialogue: 0,0:16:41.59,0:16:46.88,Sub,,0,0,0,,murid perlulah dilatih untuk {\c&H00D2FF&\fnInter ExtraBold}berhenti seketika sebelum berkongsi{\r}.
+Dialogue: 0,0:16:47.93,0:16:54.06,Sub,,0,0,0,,Untuk tujuan ini, saya mencadangkan protokol ringkas bernama {\c&H00D2FF&\fnInter ExtraBold}SEMAK{\r}.
+Dialogue: 0,0:16:55.61,0:16:59.11,Sub,,0,0,0,,SEMAK: {\c&H00D2FF&\fnInter ExtraBold}Sumber{\r}, kenal pasti {\c&H00D2FF&\fnInter ExtraBold}emosi{\r} yang cuba dibangkitkan,
+Dialogue: 0,0:16:59.13,0:17:01.60,Sub,,0,0,0,,fikirkan {\c&H00D2FF&\fnInter ExtraBold}motif{\r} penulisnya,
+Dialogue: 0,0:17:02.07,0:17:06.75,Sub,,0,0,0,,timbang {\c&H00D2FF&\fnInter ExtraBold}akibat{\r} jika dikongsi, dan dapatkan {\c&H00D2FF&\fnInter ExtraBold}konfirmasi{\r}
+Dialogue: 0,0:17:06.77,0:17:08.53,Sub,,0,0,0,,daripada sumber rasmi.
+Dialogue: 0,0:17:08.55,0:17:14.15,Sub,,0,0,0,,Selain itu, guru boleh mengendalikan sesi {\c&H00D2FF&\fnInter ExtraBold}bulatan dialog{\r}
+Dialogue: 0,0:17:14.17,0:17:16.11,Sub,,0,0,0,,dengan peraturan yang jelas,
+Dialogue: 0,0:17:16.13,0:17:19.13,Sub,,0,0,0,,iaitu bercakap tentang pengalaman sendiri,
+Dialogue: 0,0:17:19.15,0:17:23.70,Sub,,0,0,0,,mendengar tanpa mencelah dan tidak melabel mana-mana kaum.
+Dialogue: 0,0:17:24.35,0:17:27.79,Sub,,0,0,0,,Pendekatan ini sejajar dengan cadangan Tugasan 2
+Dialogue: 0,0:17:27.81,0:17:31.14,Sub,,0,0,0,,agar sekolah menyediakan ruang dialog yang selamat.
+Dialogue: 0,0:17:32.19,0:17:37.05,Sub,,0,0,0,,Tidak kurang pentingnya ialah {\c&H00D2FF&\fnInter ExtraBold}akauntabiliti dan kolaborasi komuniti{\r},
+Dialogue: 0,0:17:37.07,0:17:41.85,Sub,,0,0,0,,kerana perpaduan {\c&H00D2FF&\fnInter ExtraBold}perlu diukur, bukan sekadar diraikan{\r}.
+Dialogue: 0,0:17:41.87,0:17:47.19,Sub,,0,0,0,,Guru kelas boleh menggunakan {\c&H00D2FF&\fnInter ExtraBold}sosiogram{\r} ringkas
+Dialogue: 0,0:17:47.21,0:17:54.36,Sub,,0,0,0,,setiap semester untuk melihat corak persahabatan dan mengesan murid yang terpinggir.
+Dialogue: 0,0:17:55.35,0:18:01.33,Sub,,0,0,0,,Sudah tentu, data ini mesti dikumpulkan tanpa nama dan disimpan secara sulit.
+Dialogue: 0,0:18:01.35,0:18:07.77,Sub,,0,0,0,,Dalam masa yang sama, penilaian sahsiah wajar berasaskan {\c&H00D2FF&\fnInter ExtraBold}tingkah laku yang boleh diperhatikan{\r},
+Dialogue: 0,0:18:07.79,0:18:10.91,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}bukan andaian tentang budaya{\r} murid itu sendiri.
+Dialogue: 0,0:18:10.93,0:18:15.97,Sub,,0,0,0,,Tambahan pula, {\c&H00D2FF&\fnInter ExtraBold}ibu bapa dan komuniti{\r} perlu dilibatkan,
+Dialogue: 0,0:18:15.99,0:18:20.07,Sub,,0,0,0,,contohnya melalui {\c&H00D2FF&\fnInter ExtraBold}Hari Keluarga Berbilang Budaya{\r}
+Dialogue: 0,0:18:20.09,0:18:27.04,Sub,,0,0,0,,yang dirancang bersama PIBG serta komunikasi dengan ibu bapa dalam bahasa yang mudah difahami.
+Dialogue: 0,0:18:27.55,0:18:32.81,Sub,,0,0,0,,Persoalan seterusnya, bagaimanakah kerangka ini dilaksanakan?
+Dialogue: 0,0:18:32.83,0:18:35.45,Sub,,0,0,0,,Dalam tempoh {\c&H00D2FF&\fnInter ExtraBold}1 hingga 3 bulan{\r},
+Dialogue: 0,0:18:35.47,0:18:42.93,Sub,,0,0,0,,guru boleh terus memulakan audit bias, pelan tempat duduk berputar dan protokol SEMAK,
+Dialogue: 0,0:18:42.95,0:18:45.63,Sub,,0,0,0,,kerana kesemuanya {\c&H00D2FF&\fnInter ExtraBold}tidak memerlukan kos{\r}.
+Dialogue: 0,0:18:45.65,0:18:49.87,Sub,,0,0,0,,Apabila memasuki tempoh {\c&H00D2FF&\fnInter ExtraBold}1 semester{\r},
+Dialogue: 0,0:18:49.89,0:18:54.83,Sub,,0,0,0,,sekolah boleh melaksanakan projek RIMUP 10 minggu
+Dialogue: 0,0:18:54.85,0:18:58.19,Sub,,0,0,0,,serta sosiogram awal untuk setiap kelas.
+Dialogue: 0,0:18:58.21,0:19:03.33,Sub,,0,0,0,,Untuk {\c&H00D2FF&\fnInter ExtraBold}jangka masa panjang{\r}, Institut Pendidikan Guru wajar
+Dialogue: 0,0:19:03.35,0:19:07.25,Sub,,0,0,0,,memasukkan modul pedagogi responsif budaya
+Dialogue: 0,0:19:07.27,0:19:11.97,Sub,,0,0,0,,dan perbandingan konsep insan dalam latihan perguruan.
+Dialogue: 0,0:19:11.99,0:19:17.51,Sub,,0,0,0,,Kejayaannya boleh diukur melalui peningkatan peratusan murid
+Dialogue: 0,0:19:17.53,0:19:21.02,Sub,,0,0,0,,yang mempunyai {\c&H00D2FF&\fnInter ExtraBold}rakan rapat daripada etnik lain{\r},
+Dialogue: 0,0:19:21.16,0:19:23.98,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}penurunan insiden buli berunsur kaum{\r}
+Dialogue: 0,0:19:24.00,0:19:28.65,Sub,,0,0,0,,dan {\c&H00D2FF&\fnInter ExtraBold}maklum balas murid tentang rasa diterima{\r}.
+Dialogue: 0,0:19:29.94,0:19:34.76,Sub,,0,0,0,,Kesemua strategi ini dipandu oleh {\c&H00D2FF&\fnInter ExtraBold}tiga prinsip etika{\r},
+Dialogue: 0,0:19:34.78,0:19:37.90,Sub,,0,0,0,,iaitu {\c&H00D2FF&\fnInter ExtraBold}menghormati kepercayaan{\r},
+Dialogue: 0,0:19:37.92,0:19:42.82,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}penyertaan secara sukarela{\r} dalam aktiviti berunsur agama,
+Dialogue: 0,0:19:42.84,0:19:45.36,Sub,,0,0,0,,dan {\c&H00D2FF&\fnInter ExtraBold}perlindungan privasi murid{\r}.
+Dialogue: 0,0:19:45.38,0:19:51.04,Sub,,0,0,0,,Pendek kata, tanggungjawab pendidik bukan sekadar mengajar tentang perpaduan,
+Dialogue: 0,0:19:51.06,0:19:55.45,Sub,,0,0,0,,tetapi mereka perlu {\c&H00D2FF&\fnInter ExtraBold}membentuk pengalaman yang melahirkannya{\r}.
+Dialogue: 0,0:19:55.68,0:20:02.20,Sub,,0,0,0,,Sebagai rumusan, izinkan saya menghimpunkan semula hujah-hujah utama syarahan ini.
+Dialogue: 0,0:20:02.22,0:20:05.64,Sub,,0,0,0,,Kerangka konsep insan daripada Tugasan 2
+Dialogue: 0,0:20:05.66,0:20:09.54,Sub,,0,0,0,,memperlihatkan bahawa {\c&H00D2FF&\fnInter ExtraBold}insan berkembang melalui hubungan{\r},
+Dialogue: 0,0:20:09.56,0:20:12.08,Sub,,0,0,0,,manakala konsep masyarakat majmuk
+Dialogue: 0,0:20:12.10,0:20:17.68,Sub,,0,0,0,,mengingatkan kita bahawa {\c&H00D2FF&\fnInter ExtraBold}hidup berdampingan tidak semestinya bermaksud bersatu{\r}.
+Dialogue: 0,0:20:17.70,0:20:23.76,Sub,,0,0,0,,Bukti daripada IPNas, kajian belia, data 3R dan corak persekolahan pula
+Dialogue: 0,0:20:23.78,0:20:26.92,Sub,,0,0,0,,menunjukkan bahawa perpaduan kita {\c&H00D2FF&\fnInter ExtraBold}semakin baik{\r},
+Dialogue: 0,0:20:26.94,0:20:28.92,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}tetapi masih cetek{\r}.
+Dialogue: 0,0:20:28.94,0:20:32.26,Sub,,0,0,0,,Dalam masa yang sama, penilaian kritis terhadap bukti
+Dialogue: 0,0:20:32.28,0:20:34.50,Sub,,0,0,0,,menyedarkan kita bahawa
+Dialogue: 0,0:20:34.52,0:20:36.64,Sub,,0,0,0,,angka sahaja tidak mencukupi.
+Dialogue: 0,0:20:36.66,0:20:40.80,Sub,,0,0,0,,Yang lebih penting ialah apa yang berlaku di dalam bilik darjah
+Dialogue: 0,0:20:40.82,0:20:42.08,Sub,,0,0,0,,setiap hari.
+Dialogue: 0,0:20:42.10,0:20:44.14,Sub,,0,0,0,,Oleh hal yang demikian,
+Dialogue: 0,0:20:44.16,0:20:49.22,Sub,,0,0,0,,jalan penyelesaiannya {\c&H00D2FF&\fnInter ExtraBold}bukanlah menuding jari kepada mana-mana aliran sekolah{\r},
+Dialogue: 0,0:20:49.24,0:20:55.22,Sub,,0,0,0,,sebaliknya {\c&H00D2FF&\fnInter ExtraBold}mereka bentuk interaksi yang bermakna{\r} melalui kerangka BINA.
+Dialogue: 0,0:20:55.24,0:20:58.40,Sub,,0,0,0,,Pendirian saya sangatlah jelas:
+Dialogue: 0,0:20:58.42,0:21:02.24,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}perpaduan tidak lahir daripada duduk sebumbung{\r},
+Dialogue: 0,0:21:02.26,0:21:07.70,Sub,,0,0,0,,{\c&H00D2FF&\fnInter ExtraBold}tetapi daripada belajar, bekerja dan berdialog bersama{\r}.
+Dialogue: 0,0:21:07.72,0:21:12.42,Sub,,0,0,0,,Dalam hal ini, {\c&H00D2FF&\fnInter ExtraBold}guru ialah arkitek pertemuan{\r} tersebut.
+Dialogue: 0,0:21:12.44,0:21:16.36,Sub,,0,0,0,,Andainya setiap guru menyusun satu kumpulan yang pelbagai,
+Dialogue: 0,0:21:16.38,0:21:19.52,Sub,,0,0,0,,mengendalikan satu dialog yang selamat
+Dialogue: 0,0:21:19.54,0:21:22.34,Sub,,0,0,0,,dan menilai setiap murid secara adil,
+Dialogue: 0,0:21:22.36,0:21:25.56,Sub,,0,0,0,,maka hasrat Falsafah Pendidikan Kebangsaan
+Dialogue: 0,0:21:25.58,0:21:29.82,Sub,,0,0,0,,dan Rukun Negara untuk melahirkan masyarakat yang bersatu padu
+Dialogue: 0,0:21:29.84,0:21:32.47,Sub,,0,0,0,,tidak lagi tinggal sebagai slogan.
+Dialogue: 0,0:21:33.24,0:21:36.38,Sub,,0,0,0,,Sekian sahaja syarahan saya. Terima kasih.
+Dialogue: 1,0:01:12.16,0:01:17.16,Label,,0,0,0,,{\fad(300,300)}{\c&H00D2FF&}●{\c&HFFFFFF&}  BAHAGIAN 1  ·  PENGENALAN & HUBUNGAN FALSAFAH
+Dialogue: 1,0:03:43.28,0:03:48.28,Label,,0,0,0,,{\fad(300,300)}{\c&H00D2FF&}●{\c&HFFFFFF&}  BAHAGIAN 2  ·  ANALISIS KRITIS ISU SEMASA
+Dialogue: 1,0:13:48.94,0:13:53.94,Label,,0,0,0,,{\fad(300,300)}{\c&H00D2FF&}●{\c&HFFFFFF&}  BAHAGIAN 3  ·  CADANGAN PENYELESAIAN: KERANGKA BINA
+Dialogue: 1,0:19:55.68,0:20:00.68,Label,,0,0,0,,{\fad(300,300)}{\c&H00D2FF&}●{\c&HFFFFFF&}  BAHAGIAN 4  ·  RUMUSAN & PENUTUP
+Dialogue: 1,0:00:09.54,0:00:15.54,Name,,0,0,0,,{\fad(300,300)}Mohamad Aliff bin Ahmad Shahabuddin
+Dialogue: 1,0:00:09.54,0:00:15.54,NameSub,,0,0,0,,{\fad(300,300)}Bahasa Melayu Kumpulan 1  ·  Ambilan Ogos 2025  ·  MPU3152
