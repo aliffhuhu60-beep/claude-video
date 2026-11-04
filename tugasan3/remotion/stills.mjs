@@ -10,7 +10,11 @@ if (!BUNDLE) throw new Error('Set BUNDLE_DIR');
 const rebuild = process.env.REBUILD === '1' || !fs.existsSync(path.join(BUNDLE, 'index.html'));
 if (rebuild) {
 	fs.rmSync(BUNDLE, {recursive: true, force: true});
-	await bundle({entryPoint: path.resolve('src/Root.tsx'), outDir: BUNDLE});
+	// public kosong semasa bundle; video asas dipaut keras (hard link) selepas itu, tanpa salinan
+	fs.mkdirSync('.public-empty', {recursive: true});
+	await bundle({entryPoint: path.resolve('src/Root.tsx'), outDir: BUNDLE, publicDir: path.resolve('.public-empty')});
+	fs.mkdirSync(path.join(BUNDLE, 'public'), {recursive: true});
+	fs.linkSync(path.resolve('public/base1080.mp4'), path.join(BUNDLE, 'public/base1080.mp4'));
 }
 const serveUrl = BUNDLE;
 const times = process.argv.slice(2).map(Number);

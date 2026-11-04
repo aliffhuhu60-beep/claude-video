@@ -17,7 +17,7 @@ export const BinaBreak: React.FC = () => (
 								fontSize: 240,
 								lineHeight: 1,
 								color: i % 2 ? C.white : C.gold,
-								textShadow: '0 16px 50px rgba(0,0,0,0.55)',
+								textShadow: '0 12px 28px rgba(0,0,0,0.55)',
 								opacity: p,
 								transform: `translateY(${lerp(80, 0, p)}px) scale(${lerp(1.3, 1, p)})`,
 							}}

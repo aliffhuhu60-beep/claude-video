@@ -294,7 +294,7 @@ export const KeyQuestion: React.FC = () => (
 						borderLeft: `6px solid ${C.gold}`,
 						padding: '26px 30px',
 						borderRadius: 8,
-						boxShadow: '0 24px 60px rgba(0,0,0,0.5)',
+						boxShadow: '0 12px 28px rgba(0,0,0,0.5)',
 					}}
 				>
 					<div style={{opacity: rise(t, S(58)), transform: `translateX(${lerp(-60, 0, rise(t, S(58)))}px)`}}>

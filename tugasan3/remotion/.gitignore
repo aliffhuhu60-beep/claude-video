@@ -1,3 +1,4 @@
 node_modules
 public/*.mp4
 out
+.public-empty

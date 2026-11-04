@@ -76,7 +76,11 @@ const zoomThrough = (t: number) => {
 	return {z: 0, blur: 0};
 };
 
-export const Backdrop: React.FC = () => (
+export const Backdrop: React.FC = () => {
+	const t = useT();
+	// hanya dilukis apabila penyampai tidak memenuhi skrin
+	if (layoutAt(t).m === 'full' && t < TOTAL - 0.5) return null;
+	return (
 	<AbsoluteFill
 		style={{
 			background: `radial-gradient(1200px 800px at 25% 30%, ${C.navy3} 0%, ${C.navy2} 45%, ${C.navy} 100%)`,
@@ -91,7 +95,8 @@ export const Backdrop: React.FC = () => (
 			))}
 		</svg>
 	</AbsoluteFill>
-);
+	);
+};
 
 export const Presenter: React.FC = () => {
 	const t = useT();
@@ -136,7 +141,7 @@ export const Presenter: React.FC = () => {
 					height: 1080 * s,
 					borderRadius: radius,
 					overflow: 'hidden',
-					boxShadow: border ? `0 0 0 ${3 * border}px ${C.gold}, 0 30px 80px rgba(0,0,0,${0.5 * border})` : undefined,
+					boxShadow: border ? `0 0 0 ${3 * border}px ${C.gold}, 0 12px 28px rgba(0,0,0,${0.5 * border})` : undefined,
 				}}
 			>
 				<div style={{width: 1920, height: 1080, transform: `scale(${s})`, transformOrigin: '0 0'}}>

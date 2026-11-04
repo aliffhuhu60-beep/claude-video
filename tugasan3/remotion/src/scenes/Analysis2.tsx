@@ -31,7 +31,7 @@ export const PhoneMockup: React.FC = () => {
 								borderRadius: 56,
 								background: '#0b0f16',
 								padding: 16,
-								boxShadow: '0 40px 90px rgba(0,0,0,0.6), inset 0 0 0 2px #2a3240',
+								boxShadow: '0 12px 28px rgba(0,0,0,0.6), inset 0 0 0 2px #2a3240',
 							}}
 						>
 							<div style={{width: '100%', height: '100%', borderRadius: 42, overflow: 'hidden', background: '#F3F5F8', position: 'relative', fontFamily: F.sans}}>
@@ -183,7 +183,7 @@ export const NotEnough: React.FC = () => (
 						opacity: rise(t, 594.0, 0.3),
 						transform: `scale(${lerp(1.4, 1, rise(t, 594.0, 0.45))})`,
 						transformOrigin: 'left center',
-						textShadow: '0 10px 40px rgba(0,0,0,0.5)',
+						textShadow: '0 10px 28px rgba(0,0,0,0.5)',
 					}}
 				>
 					Tidak.
@@ -266,7 +266,7 @@ export const Pettigrew: React.FC = () => (
 	<Win s={S(161)} e={S(165) - 0.2}>
 		{(t, v) => (
 			<div style={{position: 'absolute', left: 90, top: 170, width: 560, opacity: v, transform: `rotate(${lerp(-5, -2, v)}deg) translateY(${lerp(40, 0, v)}px)`}}>
-				<div style={{background: C.paper, color: C.ink, padding: '30px 34px', borderRadius: 4, boxShadow: '0 30px 60px rgba(0,0,0,0.5)'}}>
+				<div style={{background: C.paper, color: C.ink, padding: '30px 34px', borderRadius: 4, boxShadow: '0 12px 28px rgba(0,0,0,0.5)'}}>
 					<Eyebrow color={C.red}>Meta-analisis · 2006</Eyebrow>
 					<div style={{fontFamily: F.serif, fontWeight: 700, fontSize: 30, marginTop: 8}}>Pettigrew &amp; Tropp</div>
 					<div style={{display: 'flex', alignItems: 'baseline', gap: 14, marginTop: 10}}>
@@ -287,7 +287,7 @@ export const Pettigrew: React.FC = () => (
 export const MixFrame: React.FC = () => (
 	<Win s={S(165) + 0.5} e={649.7}>
 		{(t, v) => (
-			<div style={{position: 'absolute', left: 40, top: 560, width: 940, opacity: v, background: 'rgba(10,27,46,0.9)', borderLeft: `6px solid ${C.gold}`, padding: '22px 30px', borderRadius: 8, boxShadow: '0 24px 60px rgba(0,0,0,0.5)'}}>
+			<div style={{position: 'absolute', left: 40, top: 560, width: 940, opacity: v, background: 'rgba(10,27,46,0.9)', borderLeft: `6px solid ${C.gold}`, padding: '22px 30px', borderRadius: 8, boxShadow: '0 12px 28px rgba(0,0,0,0.5)'}}>
 				<div style={{fontSize: 26, fontWeight: 700, fontFamily: F.sans, color: C.soft, opacity: rise(t, S(166))}}>Berkelompok mengikut kaum di kantin dan di dalam kelas</div>
 				<div
 					style={{
@@ -299,7 +299,7 @@ export const MixFrame: React.FC = () => (
 						marginTop: 10,
 						opacity: rise(t, S(168)),
 						transform: `translateX(${lerp(-80, 0, rise(t, S(168)))}px)`,
-						textShadow: '0 8px 40px rgba(0,0,0,0.6)',
+						textShadow: '0 8px 28px rgba(0,0,0,0.6)',
 					}}
 				>
 					Bercampur, <span style={{color: C.gold}}>tetapi tidak bergabung.</span>

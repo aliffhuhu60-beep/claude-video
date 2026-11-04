@@ -103,7 +103,7 @@ export const References: React.FC = () => {
 										padding: '50px 64px',
 										borderRadius: 4,
 										opacity: v,
-										boxShadow: '0 30px 80px rgba(0,0,0,0.5)',
+										boxShadow: '0 12px 28px rgba(0,0,0,0.5)',
 										transform: `translateX(${lerp(120, 0, rise(t, s, 0.6)) - lerp(0, 120, rise(t, e - 0.6, 0.6))}px) rotate(${k % 2 ? 0.6 : -0.6}deg)`,
 									}}
 								>

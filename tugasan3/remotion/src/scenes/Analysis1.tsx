@@ -7,7 +7,7 @@ export const FurnivallBook: React.FC = () => (
 	<Win s={S(67)} e={238.6}>
 		{(t, v) => (
 			<div style={{position: 'absolute', left: 80, top: 210, width: 560, opacity: v, transform: `rotate(${lerp(-4, -2, v)}deg)`}}>
-				<div style={{background: C.paper, color: C.ink, borderRadius: 6, padding: '28px 30px', boxShadow: '0 24px 60px rgba(0,0,0,0.45)'}}>
+				<div style={{background: C.paper, color: C.ink, borderRadius: 6, padding: '28px 30px', boxShadow: '0 12px 28px rgba(0,0,0,0.45)'}}>
 					<Eyebrow color={C.red}>Sumber · 1948</Eyebrow>
 					<div style={{fontFamily: F.serif, fontWeight: 700, fontSize: 40, marginTop: 10}}>J. S. Furnivall</div>
 					<div style={{fontFamily: F.serif, fontStyle: 'italic', fontSize: 27, marginTop: 8, lineHeight: 1.25}}>
@@ -27,7 +27,6 @@ const PaperQuote: React.FC<{t: number; v: number; eyebrow: string; quote: React.
 			style={{
 				width: 1240,
 				transform: `translateY(${lerp(60, 0, v)}px) rotate(${lerp(-2.5, -1, v)}deg)`,
-				filter: 'drop-shadow(0 30px 50px rgba(0,0,0,0.5))',
 			}}
 		>
 			<div
@@ -222,7 +221,7 @@ export const HeadlineWall: React.FC = () => {
 											minHeight: 230,
 											opacity: p,
 											transform: `translateY(${lerp(40, 0, p)}px) rotate(${(i % 2 ? 1 : -1) * 0.8}deg)`,
-											boxShadow: lead ? `0 0 0 4px ${C.gold}, 0 20px 50px rgba(0,0,0,0.45)` : '0 20px 50px rgba(0,0,0,0.45)',
+											boxShadow: lead ? `0 0 0 4px ${C.gold}, 0 12px 28px rgba(0,0,0,0.45)` : '0 12px 28px rgba(0,0,0,0.45)',
 										}}
 									>
 										<div style={{fontFamily: F.sans, fontWeight: 700, fontSize: 17, letterSpacing: '0.08em', textTransform: 'uppercase', color: C.red}}>
