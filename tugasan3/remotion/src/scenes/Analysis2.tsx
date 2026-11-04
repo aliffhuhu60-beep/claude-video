@@ -111,7 +111,7 @@ export const Enrolment: React.FC = () => (
 						['2014', 11.67, a, '#5B8DB8'],
 						['2024', 18.52, b, C.gold],
 					].map(([yr, val, p, col]) => (
-						<div key={yr as string} style={{marginTop: 20, opacity: (p as number) > 0 ? 1 : 0.25}}>
+						<div key={yr as string} style={{marginTop: 20, opacity: p as number}}>
 							<div style={{display: 'flex', justifyContent: 'space-between', fontSize: 21, color: C.soft}}>
 								<span>{yr}</span>
 								<span style={{fontSize: 40, fontWeight: 800, color: C.white}}>{countText(p as number, val as number, 2)}%</span>
@@ -287,13 +287,13 @@ export const Pettigrew: React.FC = () => (
 export const MixFrame: React.FC = () => (
 	<Win s={S(165) + 0.5} e={649.7}>
 		{(t, v) => (
-			<div style={{position: 'absolute', left: 50, top: 560, width: 900, opacity: v}}>
+			<div style={{position: 'absolute', left: 40, top: 560, width: 940, opacity: v, background: 'rgba(10,27,46,0.9)', borderLeft: `6px solid ${C.gold}`, padding: '22px 30px', borderRadius: 8, boxShadow: '0 24px 60px rgba(0,0,0,0.5)'}}>
 				<div style={{fontSize: 26, fontWeight: 700, fontFamily: F.sans, color: C.soft, opacity: rise(t, S(166))}}>Berkelompok mengikut kaum di kantin dan di dalam kelas</div>
 				<div
 					style={{
 						fontFamily: F.serif,
 						fontWeight: 800,
-						fontSize: 78,
+						fontSize: 70,
 						lineHeight: 1.05,
 						color: C.white,
 						marginTop: 10,

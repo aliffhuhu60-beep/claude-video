@@ -142,7 +142,7 @@ export const Layers: React.FC = () => {
 			{(t, v) => (
 				<div style={{position: 'absolute', left: 70, top: 120, width: 660, height: 740, perspective: 1400, opacity: v}}>
 					<Eyebrow style={{marginLeft: 10}}>Di manakah jurangnya? Tiga lapisan</Eyebrow>
-					<div style={{position: 'relative', marginTop: 30, transformStyle: 'preserve-3d', transform: `rotateY(${lerp(24, 16, v)}deg) rotateX(6deg)`}}>
+					<div style={{position: 'relative', marginTop: 60, transformStyle: 'preserve-3d', transform: `rotateY(${lerp(18, 12, v)}deg) rotateX(4deg)`}}>
 						<svg width={60} height={560} style={{position: 'absolute', left: 30, top: 50}}>
 							<line x1={30} y1={0} x2={30} y2={560 * rise(t, S(87), 6)} stroke={C.gold} strokeWidth={3} strokeDasharray="4 8" />
 						</svg>
@@ -154,14 +154,14 @@ export const Layers: React.FC = () => {
 									style={{
 										position: 'absolute',
 										left: 0,
-										top: i * 200,
+										top: i * 215,
 										width: 600,
 										padding: '24px 26px',
 										display: 'flex',
 										gap: 20,
 										alignItems: 'center',
 										opacity: p,
-										transform: `translateZ(${lerp(-200, i * 30, p)}px)`,
+										transform: `translateZ(${lerp(-200, 0, p)}px)`,
 									}}
 								>
 									<div style={{width: 66, height: 66, borderRadius: 16, background: C.gold, display: 'grid', placeItems: 'center', flexShrink: 0}}>
@@ -336,7 +336,7 @@ export const YouthStat: React.FC = () => (
 					</div>
 					<div style={{display: 'flex', alignItems: 'flex-end', gap: 24, marginTop: 26}}>
 						<div style={{opacity: a}}>
-							<div style={{fontSize: 96, fontWeight: 800, lineHeight: 1}}>{countText(a, 43, 0)}%</div>
+							<div style={{fontSize: 84, fontWeight: 800, lineHeight: 1}}>{countText(a, 43, 0)}%</div>
 							<div style={{fontSize: 20, color: C.soft, marginTop: 6}}>Jan. 2023</div>
 						</div>
 						<div style={{opacity: b, paddingBottom: 40}}>
@@ -345,7 +345,7 @@ export const YouthStat: React.FC = () => (
 							</svg>
 						</div>
 						<div style={{opacity: b}}>
-							<div style={{fontSize: 118, fontWeight: 800, lineHeight: 1, color: C.gold}}>{countText(b, 58, 0, 43)}%</div>
+							<div style={{fontSize: 100, fontWeight: 800, lineHeight: 1, color: C.gold}}>{countText(b, 58, 0, 43)}%</div>
 							<div style={{fontSize: 20, color: C.soft, marginTop: 6}}>Apr. 2024</div>
 						</div>
 					</div>

@@ -74,7 +74,7 @@ export const BinaChecklist: React.FC = () => {
 							return (
 								<Glass key={L} style={{display: 'flex', alignItems: 'center', gap: 20, padding: '12px 20px', opacity: lerp(0.35, 1, p)}}>
 									<div style={{fontFamily: F.serif, fontWeight: 800, fontSize: 68, lineHeight: 1, color: C.gold, width: 56, textAlign: 'center'}}>{L}</div>
-									<div style={{overflow: 'hidden', whiteSpace: 'nowrap', maxWidth: 520 * p, fontSize: 28, fontWeight: 700}}>{name}</div>
+									<div style={{overflow: 'hidden', whiteSpace: 'nowrap', maxWidth: 560 * p, fontSize: 26, fontWeight: 700}}>{name}</div>
 								</Glass>
 							);
 						})}
@@ -118,6 +118,7 @@ const StrategyPanel: React.FC<{
 			<div style={{display: 'flex', flexDirection: 'column', gap: 16}}>
 				{items.map((it, i) => {
 					const p = rise(t, it.s, 0.5);
+					if (t < it.s - 0.02) return null;
 					return (
 						<div key={i} style={{display: 'flex', gap: 16, alignItems: 'flex-start', opacity: lerp(0.0, 1, p)}}>
 							<Tick p={p} />
@@ -345,7 +346,7 @@ export const Plan: React.FC = () => {
 			{(t, v) => {
 				const grow = Math.max(rise(t, S(288), 2.5) * 0.34, rise(t, S(291), 2.5) * 0.67, rise(t, S(294), 2.5));
 				return (
-					<div style={{position: 'absolute', left: 70, top: 100, width: 900, opacity: v}}>
+					<div style={{position: 'absolute', left: 70, top: 170, width: 900, opacity: v}}>
 						<Eyebrow>Pelan pelaksanaan</Eyebrow>
 						<div style={{fontFamily: F.serif, fontWeight: 700, fontSize: 44, color: C.white, marginTop: 8}}>Bagaimana kerangka ini dilaksanakan?</div>
 						<div style={{position: 'relative', height: 14, borderRadius: 7, background: 'rgba(255,255,255,0.12)', marginTop: 30}}>
@@ -355,10 +356,11 @@ export const Plan: React.FC = () => {
 							{M.map(([s, when, kind, what], i) => {
 								const p = rise(t, s, 0.6);
 								return (
+									// kad belum tiba tetap memegang ruang supaya susun atur stabil
 									<Glass key={when} style={{flex: 1, padding: '20px 22px', opacity: p, transform: `translateY(${lerp(30, 0, p)}px)`, border: i === 2 ? `1.5px solid ${C.gold}` : `1px solid ${C.glassLine}`}}>
 										<div style={{fontSize: 18, fontWeight: 700, letterSpacing: '0.1em', color: C.gold}}>{kind.toUpperCase()}</div>
-										<div style={{fontSize: 34, fontWeight: 800, marginTop: 6}}>{when}</div>
-										<div style={{fontSize: 22, color: C.soft, marginTop: 10, lineHeight: 1.3}}>{what}</div>
+										<div style={{fontSize: 38, fontWeight: 800, marginTop: 6}}>{when}</div>
+										<div style={{fontSize: 25, color: C.soft, marginTop: 10, lineHeight: 1.3}}>{what}</div>
 										{i === 0 ? (
 											<div style={{marginTop: 12, display: 'inline-block', padding: '6px 14px', borderRadius: 20, background: C.gold, color: C.navy, fontWeight: 800, fontSize: 19, opacity: rise(t, 1122.9 + 1.2)}}>
 												Tanpa kos
@@ -443,7 +445,7 @@ export const Experience: React.FC = () => (
 		{(t, v) => (
 			<Glass style={{position: 'absolute', left: 70, top: 260, width: 640, padding: '30px 34px', opacity: v}}>
 				<div style={{fontSize: 26, color: C.soft}}>Bukan sekadar mengajar tentang perpaduan,</div>
-				<div style={{fontFamily: F.serif, fontWeight: 700, fontSize: 46, lineHeight: 1.15, marginTop: 10, opacity: rise(t, S(306))}}>
+				<div style={{fontFamily: F.serif, fontWeight: 700, fontSize: 46, lineHeight: 1.15, marginTop: 10, opacity: rise(t, S(306)), maxHeight: 220 * rise(t, S(306) - 0.3, 0.4), overflow: 'hidden'}}>
 					tetapi <span style={{color: C.gold}}>membentuk pengalaman</span> yang melahirkannya.
 				</div>
 			</Glass>

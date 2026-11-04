@@ -282,15 +282,19 @@ export const IssueTitle: React.FC = () => (
 export const KeyQuestion: React.FC = () => (
 	<Win s={S(57) + 0.4} e={222.6} d={0.5}>
 		{(t, v) => (
-			<div style={{position: 'absolute', left: 60, top: 520, width: 760, opacity: v}}>
+			<div style={{position: 'absolute', left: 40, top: 500, width: 780, opacity: v}}>
 				<div
 					style={{
 						fontFamily: F.serif,
 						fontWeight: 700,
-						fontSize: 54,
+						fontSize: 52,
 						lineHeight: 1.12,
 						color: C.white,
-						textShadow: '0 6px 30px rgba(0,0,0,0.6)',
+						background: 'rgba(10,27,46,0.9)',
+						borderLeft: `6px solid ${C.gold}`,
+						padding: '26px 30px',
+						borderRadius: 8,
+						boxShadow: '0 24px 60px rgba(0,0,0,0.5)',
 					}}
 				>
 					<div style={{opacity: rise(t, S(58)), transform: `translateX(${lerp(-60, 0, rise(t, S(58)))}px)`}}>
