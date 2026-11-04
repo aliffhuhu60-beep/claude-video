@@ -1,10 +1,11 @@
 import React from 'react';
 import {Easing, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import data from './cues.json';
+import remap from './remap.json';
 
 export const FPS = 30;
 export const TOTAL: number = data.total; // tempoh rakaman selepas suntingan (saat)
-export const REF_DUR = 27; // tempoh paparan Rujukan di hujung
+export const REF_DUR = 21; // tempoh paparan Rujukan di hujung (3 halaman x 7 s)
 
 export const C = {
 	navy: '#0A1B2E',
@@ -44,10 +45,34 @@ export const E = (i: number): number => {
 	return c.e;
 };
 
+// Jeda senyap yang panjang dirapatkan: setiap segmen [mulaAsal, tamatAsal) dalam bingkai garis masa asal.
+// Grafik dan sarikata kekal ditulis dalam masa asal; useT() menukar bingkai baharu kepada masa asal.
+export type Seg = {from: number; dur: number; src: number};
+export const SEGS: Seg[] = (() => {
+	let acc = 0;
+	return (remap.segments as number[][]).map(([a, b]) => {
+		const s = {from: acc, dur: b - a, src: a};
+		acc += b - a;
+		return s;
+	});
+})();
+export const SPEECH_FRAMES = SEGS[SEGS.length - 1].from + SEGS[SEGS.length - 1].dur;
+export const toOld = (f: number): number => {
+	if (f >= SPEECH_FRAMES) return TOTAL + (f - SPEECH_FRAMES) / FPS;
+	let lo = 0,
+		hi = SEGS.length - 1;
+	while (lo < hi) {
+		const mid = (lo + hi + 1) >> 1;
+		if (SEGS[mid].from <= f) lo = mid;
+		else hi = mid - 1;
+	}
+	const sg = SEGS[lo];
+	return (sg.src + (f - sg.from)) / FPS;
+};
+
 export const useT = () => {
 	const f = useCurrentFrame();
-	const {fps} = useVideoConfig();
-	return f / fps;
+	return toOld(f);
 };
 
 const ease = Easing.bezier(0.22, 1, 0.36, 1);

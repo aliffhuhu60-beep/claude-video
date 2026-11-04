@@ -1,6 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, OffthreadVideo, staticFile} from 'remotion';
-import {C, TOTAL, clamp01, lerp, rise, useT} from './lib';
+import {AbsoluteFill, OffthreadVideo, Sequence, staticFile} from 'remotion';
+import {C, SEGS, TOTAL, clamp01, lerp, rise, useT} from './lib';
 
 // Sempadan syot dalam garis masa selepas suntingan (saat).
 export const SHOTS = [0, 223.0, 342.6, 444.5, 497.6, 582.3, 828.7, 1013.9, 1160.8, 1195.4, TOTAL];
@@ -154,7 +154,11 @@ export const Presenter: React.FC = () => {
 							filter: blur > 0.2 || bright < 0.99 ? `blur(${blur}px) brightness(${bright})` : undefined,
 						}}
 					>
-						<OffthreadVideo src={staticFile('base1080.mp4')} style={{width: 1920, height: 1080}} />
+						{SEGS.map((sg) => (
+							<Sequence key={sg.from} from={sg.from} durationInFrames={sg.dur} layout="none">
+								<OffthreadVideo src={staticFile('base1080.mp4')} startFrom={sg.src} style={{width: 1920, height: 1080, position: 'absolute', left: 0, top: 0}} />
+							</Sequence>
+						))}
 					</div>
 				</div>
 			</div>
