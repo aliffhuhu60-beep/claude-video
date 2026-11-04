@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Sequence} from 'remotion';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
@@ -32,8 +32,9 @@ import {
 	Triangulation,
 } from './scenes/Analysis2';
 import {BinaBreak, BinaChecklist, DialogCircle, Ethics, Experience, Indicators, Plan, StratA, StratB, StratI, StratN} from './scenes/Solutions';
-import {CoverStand, References, SummaryChips} from './scenes/Closing';
-import {rise, TOTAL, useT} from './lib';
+import {CoverStand, SummaryChips} from './scenes/Closing';
+import {IntroScene, OutroScene} from './scenes/Bookends';
+import {INTRO_F, SPEECH_FRAMES, rise, useT} from './lib';
 
 const Fade: React.FC = () => {
 	const t = useT();
@@ -41,8 +42,8 @@ const Fade: React.FC = () => {
 	return o > 0 ? <AbsoluteFill style={{background: '#000', opacity: o}} /> : null;
 };
 
-export const Main: React.FC = () => {
-	const t = useT();
+/** Syarahan (garis masa ucapan); bingkai bermula 0 pada awal ucapan. */
+const Speech: React.FC = () => {
 	return (
 		<AbsoluteFill style={{background: '#0A1B2E'}}>
 			<Backdrop />
@@ -97,9 +98,22 @@ export const Main: React.FC = () => {
 			{/* Rumusan & penutup */}
 			<SummaryChips />
 			<CoverStand />
-			{t > TOTAL - 1 ? <References /> : null}
 			<Subtitles />
 			<Fade />
 		</AbsoluteFill>
 	);
 };
+
+export const Main: React.FC = () => (
+	<AbsoluteFill style={{background: '#000'}}>
+		<Sequence durationInFrames={INTRO_F}>
+			<IntroScene />
+		</Sequence>
+		<Sequence from={INTRO_F}>
+			<Speech />
+		</Sequence>
+		<Sequence from={INTRO_F + SPEECH_FRAMES}>
+			<OutroScene />
+		</Sequence>
+	</AbsoluteFill>
+);

@@ -5,7 +5,12 @@ import remap from './remap.json';
 
 export const FPS = 30;
 export const TOTAL: number = data.total; // tempoh rakaman selepas suntingan (saat)
-export const REF_DUR = 21; // tempoh paparan Rujukan di hujung (3 halaman x 7 s)
+export const REF_DUR = 21; // (tidak digunakan lagi) Rujukan kini dipaparkan dalam pembukaan
+// Pembukaan (tanpa suara, teks bergerak + sumber rujukan) dan penutup (Terima kasih menonton), dalam saat
+export const INTRO = 13.5;
+export const OUTRO = 8;
+export const INTRO_F = Math.round(INTRO * FPS);
+export const OUTRO_F = Math.round(OUTRO * FPS);
 
 export const C = {
 	navy: '#0A1B2E',

@@ -54,7 +54,7 @@ export const CoverStand: React.FC = () => (
 );
 
 // Senarai rujukan, disalin tepat daripada senarai rujukan bahan tugasan
-const REFS: string[] = [
+export const REFS: string[] = [
 	'Al-Quran. (t.t.). Surah al-Hujurat, 49:13.',
 	'Allport, G. W. (1954). The nature of prejudice. Addison-Wesley.',
 	'Aronson, E., & Patnoe, S. (2011). Cooperation in the classroom: The jigsaw method (3rd ed.). Pinter & Martin.',
