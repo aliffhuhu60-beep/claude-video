@@ -17,11 +17,11 @@ export async function makeBundle(dir) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
 	const serveUrl = await makeBundle(path.resolve('.bundle'));
-	const composition = await selectComposition({serveUrl, id: 'Podcast', browserExecutable: BROWSER});
+	const composition = await selectComposition({serveUrl, id: process.env.COMP ?? 'Podcast', browserExecutable: BROWSER});
 	fs.mkdirSync('out', {recursive: true});
 	for (const t of process.argv.slice(2).map(Number)) {
 		await renderStill({
-			serveUrl, composition, frame: Math.round(t * 30), output: `out/still_${String(t).replace('.', '_')}.jpg`,
+			serveUrl, composition, frame: Math.round(t * 30), output: `out/${process.env.COMP ?? ''}still_${String(t).replace('.', '_')}.jpg`,
 			imageFormat: 'jpeg', jpegQuality: 85, browserExecutable: BROWSER, chromiumOptions: {gl: 'swangle'}, timeoutInMilliseconds: 600000,
 		});
 		console.log('ok', t);

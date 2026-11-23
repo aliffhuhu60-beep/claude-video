@@ -100,3 +100,15 @@ ffmpeg -i remotion/out/video_noaudio.mp4 -i output/audio/mix_final.wav -map 0:v 
 ## Kredit
 
 Naim (Hos / Moderator) · Fadli (Panel 1) · Adam (Panel 2). BMMB3233 Sintaksis Bahasa Melayu, Tutorial M13.
+
+## Promo 40 s (gaya blok voxel)
+
+`remotion/src/promo/` (komposisi `Promo`) dan `audio/promo_music.py`, yang menghasilkan muzik chiptune 8-bit asal dan SFX blok.
+
+```bash
+python3 audio/promo_music.py
+cd remotion && COMP=Promo node render.mjs 0 1199 out/promo_noaudio.mp4
+ffmpeg -i remotion/out/promo_noaudio.mp4 -i output/promo/promo_audio.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest output/promo/Bicara_Bahasa_Promo_Blok_40s.mp4
+```
+
+Babak: tajuk (0-4 s) · beranda & watak (4-9 s) · 01 kerancuan (9-14 s) · 02 Rojak Betulkan (14-22 s) · 03 media sosial (22-27 s) · penutup (27-30 s) · iklan lagu (30-40 s).

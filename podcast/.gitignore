@@ -7,6 +7,7 @@ work/face_landmarker.task
 work/mix_raw.wav
 work/*.log
 output/*.mp4
+!output/promo/*.mp4
 output/audio/*.wav
 remotion/node_modules
 remotion/public/*.mp4
@@ -14,3 +15,4 @@ remotion/out
 remotion/.bundle
 remotion/.public-empty
 work/tmp_list.txt
+output/promo/*.wav

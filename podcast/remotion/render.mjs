@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import {makeBundle, BROWSER} from './stills.mjs';
 
 const serveUrl = await makeBundle(path.resolve('.bundle'));
-const composition = await selectComposition({serveUrl, id: 'Podcast', browserExecutable: BROWSER});
+const composition = await selectComposition({serveUrl, id: process.env.COMP ?? 'Podcast', browserExecutable: BROWSER});
 const a = process.argv[2] ? Number(process.argv[2]) : 0;
 const b = process.argv[3] ? Number(process.argv[3]) : composition.durationInFrames - 1;
 fs.mkdirSync('out', {recursive: true});
