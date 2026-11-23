@@ -187,7 +187,7 @@ k = 0
 for ri in range(2):
     for i in range(6):
         put(sfx, pop(), F(4 + (ri * 6 + i) * 3 + 9), 0.5)
-put(sfx, boom(), F(60), 0.9)
+put(sfx, boom(), F(64), 0.9)
 for c in (120, 270, 420, 660, 810, 900):
     put(sfx, whoosh(), F(c - 12), 0.5)
 # beranda
@@ -202,14 +202,12 @@ put(sfx, whoosh(), F(270 + 62), 0.5)
 put(sfx, brk(), F(270 + 90), 0.8)
 put(sfx, boom(), F(270 + 92), 0.6)
 put(sfx, pop(), F(270 + 104), 0.5)
-# rojak betulkan: tukul
-for i in range(5):
-    put(sfx, brk(), F(420 + 16 + 26 + i * 18), 0.75)
-    put(sfx, pop(), F(420 + 16 + 26 + i * 18 + 3), 0.4)
-for i in range(2):
-    put(sfx, brk(), F(420 + 140 + 26 + i * 20), 0.75)
-put(sfx, coin(), F(420 + 126), 0.6)
-put(sfx, coin(), F(420 + 222), 0.6)
+# rojak betulkan: blok jatuh ikut kata Fadli, tukul ikut kata Adam
+for d in (8, 38, 55, 70, 103):
+    put(sfx, pop(), F(420 + d + 8), 0.4)
+for h in (142, 150, 160, 180, 211):
+    put(sfx, brk(), F(420 + h), 0.6)
+put(sfx, coin(), F(420 + 228), 0.6)
 # media sosial
 for i in range(3):
     put(sfx, pop(), F(660 + 18 + i * 14 + 4), 0.45)
@@ -221,6 +219,45 @@ for i in range(3):
     put(sfx, pop(), F(810 + 22 + i * 6 + 4), 0.5)
 # iklan
 put(sfx, coin(), F(904), 0.6)
+
+# ------------------------------------------------------------------ suara sebenar perbualan
+# (klip, mula sumber, tamat sumber, masa promo)
+VOX = [
+    (1, 2.92, 5.15, 0.0),  # Naim: Selamat datang ke Bicara Bahasa.
+    (1, 52.52, 54.35, 2.17),  # Naim: rojak atau rancu
+    (1, 17.70, 20.95, 4.60),  # Naim: Saya Naim. Bersama saya, Fadli dan Adam.
+    (1, 104.40, 107.62, 9.20),  # Naim: Apa sebenarnya ... kerancuan bahasa?
+    (1, 113.40, 114.60, 12.45),  # Adam: bercampur aduk
+    (1, 306.45, 310.80, 14.30),  # Fadli: Boleh tak you submit assignment tu before deadline?
+    (1, 330.70, 334.30, 18.70),  # Adam: Bolehkah awak menghantar tugasan itu sebelum tarikh akhir?
+    (1, 717.38, 720.70, 22.60),  # Fadli: Aku pernah juga hampir tulis BTW
+    (1, 720.82, 721.36, 25.95),  # By the way.
+    (2, 55.62, 58.50, 27.00),  # Fadli: Roti canai boleh rojak dengan kuah.
+]
+VOICE = {}
+for n in (1, 2):
+    w = wave.open(os.path.join(ROOT, 'work', f'voice{n}.wav'))
+    VOICE[n] = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
+voice = np.zeros(N)
+for n, a, b, at in VOX:
+    x = VOICE[n][int(a * SR): int(b * SR)].copy()
+    f1 = int(0.015 * SR)
+    f2 = int(0.06 * SR)
+    x[:f1] *= np.linspace(0, 1, f1)
+    x[-f2:] *= np.linspace(1, 0, f2)
+    put(voice, x, at)
+act = voice != 0
+# sampul ducking (perlahankan muzik & SFX ketika bercakap)
+env = np.abs(voice)
+k = int(0.12 * SR)
+c = np.cumsum(np.concatenate([[0], env]))
+idx = np.arange(N)
+sm = (c[np.minimum(idx + k, N)] - c[np.maximum(idx - k, 0)]) / (2 * k)
+speak = np.clip(sm / (np.percentile(sm[sm > 0], 60) + 1e-9), 0, 1)
+k2 = int(0.25 * SR)
+c2 = np.cumsum(np.concatenate([[0], speak]))
+speak = (c2[np.minimum(idx + k2, N)] - c2[np.maximum(idx - k2, 0)]) / (2 * k2)
+duck = 1 - 0.62 * np.clip(speak * 1.6, 0, 1)
 
 # ------------------------------------------------------------------ lagu iklan (30-40 s)
 w = wave.open(os.path.join(ROOT, 'music', 'suno.wav'))
@@ -239,7 +276,10 @@ def rms(x):
 mix = np.zeros((N, 2), np.float32)
 m = mus / (rms(mus[: 30 * SR]) + 1e-9) * 0.16
 x = sfx / (np.max(np.abs(sfx)) + 1e-9) * 0.55
-mix += np.stack([m + x, m + x], 1)
+vrms = np.sqrt(np.mean(voice[act] ** 2)) if act.any() else 1
+v = voice / (vrms + 1e-9) * 0.20
+bed = m * duck + x * (1 - 0.35 * (1 - duck)) + v
+mix += np.stack([bed, bed], 1)
 seg = seg / (rms(seg) + 1e-9) * 0.17
 put_at = 30 * SR
 mix[put_at: put_at + len(seg)] += seg[: N - put_at]

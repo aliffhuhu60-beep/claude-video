@@ -165,13 +165,14 @@ const FX = 105,
 	FY = 40; // titik fokus kamera (sekitar watak)
 
 /** Dunia beranda dengan tiga watak */
-const Porch: React.FC<{f: number; talk?: Look | null; wave?: boolean; zoom?: number; panX?: number; tags?: number}> = ({
+const Porch: React.FC<{f: number; talk?: Look | null; wave?: boolean; zoom?: number; panX?: number; tags?: number; tagAt?: number[]}> = ({
 	f,
 	talk = null,
 	wave = false,
 	zoom = 1,
 	panX = 0,
 	tags = 0,
+	tagAt,
 }) => {
 	const boxes: Box[] = [
 		...porch(),
@@ -193,7 +194,7 @@ const Porch: React.FC<{f: number; talk?: Look | null; wave?: boolean; zoom?: num
 			</svg>
 			{/* tag nama terapung */}
 			{heads.map(([L, x, y], i) => {
-				const p = bounceIn(f, tags + i * 8, 16);
+				const p = bounceIn(f, tagAt ? tagAt[i] : tags + i * 8, 16);
 				if (tags <= 0 || p <= 0) return null;
 				const [sx, sy] = proj(x + 0.6, y + 0.35, 4.2);
 				const role = L === NAIM ? 'HOS' : L === FADLI ? 'PANEL 1' : 'PANEL 2';
@@ -257,7 +258,7 @@ const Banner: React.FC<{f: number; n: string; title: string}> = ({f, n, title}) 
 const S1Title: React.FC<{f: number}> = ({f}) => {
 	const row1 = 'BICARA'.split('');
 	const row2 = 'BAHASA'.split('');
-	const slam = 60;
+	const slam = 64;
 	const shake = f >= slam && f < slam + 12 ? Math.sin(f * 3) * (slam + 12 - f) * 1.6 : 0;
 	const main = bounceIn(f, slam - 8, 14);
 	return (
@@ -314,8 +315,8 @@ const S2Porch: React.FC<{f: number}> = ({f}) => {
 	return (
 		<AbsoluteFill>
 			<Sky f={f + 120} />
-			<Porch f={f} talk={f > 40 && f < 128 ? NAIM : null} zoom={z} panX={-120} tags={10} />
-			<Bubble text="SELAMAT DATANG KE BICARA BAHASA!" x={1240} y={110} p={bounceIn(f, 40, 12)} side="l" size={22} />
+			<Porch f={f} talk={f > 18 && f < 116 ? NAIM : null} zoom={z} panX={-120} tags={1} tagAt={[100, 80, 18]} />
+			<Bubble text="SAYA NAIM. BERSAMA SAYA, FADLI DAN ADAM!" x={1240} y={110} p={bounceIn(f, 14, 12)} side="l" size={22} />
 			<div style={{position: 'absolute', left: 60, bottom: 50, opacity: r(f, 6, 12)}}>
 				<Block text="BORAK BERANDA" bg={P.burg} size={24} h={74} />
 			</div>
@@ -412,13 +413,22 @@ const EX2: Fix[] = [
 	{bad: 'DATANG KE MAJLIS ITU.', good: null},
 ];
 
-const FixRow: React.FC<{f: number; items: Fix[]; start: number; y: number; step: number; seed: number}> = ({f, items, start, y, step, seed}) => {
-	const hits = items.map((it, i) => (it.good ? start + 26 + i * step : -1));
+const FixRow: React.FC<{f: number; items: Fix[]; start: number; y: number; step: number; seed: number; drops?: number[]; hitsAt?: number[]}> = ({f, items, start, y, step, seed, drops, hitsAt}) => {
+	const hits = hitsAt ?? items.map((it, i) => (it.good ? start + 26 + i * step : -1));
+	// anggaran pusat setiap blok (fon piksel ≈ 1 em per aksara)
+	const wid = items.map((it) => 52 + it.bad.length * 26);
+	const tot = wid.reduce((a, b) => a + b, 0) + 14 * (items.length - 1);
+	let acc = 960 - tot / 2;
+	const cx = wid.map((w) => {
+		const c = acc + w / 2;
+		acc += w + 14;
+		return c;
+	});
 	return (
 		<>
 			<div style={{position: 'absolute', left: 0, right: 0, top: y, display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 14, rowGap: 18, padding: '0 80px'}}>
 				{items.map((it, i) => {
-					const inP = bounceIn(f, start + i * 3, 12);
+					const inP = bounceIn(f, drops ? drops[i] : start + i * 3, 12);
 					const fixed = it.good && f >= hits[i];
 					const pop = fixed ? bounceIn(f, hits[i], 10) : 1;
 					return (
@@ -441,41 +451,37 @@ const FixRow: React.FC<{f: number; items: Fix[]; start: number; y: number; step:
 				if (t < 0 || t > 16) return null;
 				const ang = interpolate(t, [0, 10, 16], [-70, 10, -30]);
 				return (
-					<div key={'h' + i} style={{position: 'absolute', left: 860 + (i - items.length / 2) * 120, top: y - 170, transform: `rotate(${ang}deg)`, transformOrigin: '40px 190px'}}>
+					<div key={'h' + i} style={{position: 'absolute', left: cx[i] - 40, top: y - 196, transform: `rotate(${ang}deg)`, transformOrigin: '40px 190px'}}>
 						<div style={{width: 120, height: 60, background: '#8A8F98', boxShadow: 'inset -8px -8px 0 rgba(0,0,0,0.35), inset 8px 8px 0 rgba(255,255,255,0.3)', marginLeft: -20}} />
 						<div style={{width: 26, height: 140, background: '#8B5A2B', marginLeft: 27, boxShadow: 'inset -6px 0 0 rgba(0,0,0,0.3)'}} />
 					</div>
 				);
 			})}
 			{items.map((it, i) =>
-				it.good ? <Burst key={'b' + i} f={f} at={hits[i]} x={960 + (i - (items.length - 1) / 2) * 260} y={y + 44} colors={['#8E2F3F', '#FF6B6B', P.cream]} n={12} seed={seed + i} /> : null,
+				it.good ? <Burst key={'b' + i} f={f} at={hits[i]} x={cx[i]} y={y + 44} colors={['#8E2F3F', '#FF6B6B', P.cream]} n={12} seed={seed + i} /> : null,
 			)}
 		</>
 	);
 };
 
 const S4Betulkan: React.FC<{f: number}> = ({f}) => {
-	const sc1 = bounceIn(f, 126, 12);
-	const sc2 = bounceIn(f, 222, 12);
+	const sc1 = bounceIn(f, 228, 12);
 	return (
 		<AbsoluteFill>
 			<Sky f={f + 420} dim={0.3} />
 			<Banner f={f} n="02" title="CABARAN ROJAK BETULKAN" />
-			<div style={{position: 'absolute', left: 90, top: 250, opacity: r(f, 14, 10)}}>
+			<div style={{position: 'absolute', left: 0, right: 0, top: 580, display: 'flex', justifyContent: 'center', opacity: r(f, 6, 10)}}>
 				<PixText size={22} color={P.gold} depth={3}>
-					CONTOH 1
+					{f < 138 ? 'FADLI: AYAT ROJAK...' : 'ADAM: VERSI BAKU!'}
 				</PixText>
 			</div>
-			<FixRow f={f} items={EX1} start={16} y={300} step={18} seed={20} />
-			<div style={{position: 'absolute', left: 90, top: 620, opacity: r(f, 136, 10)}}>
-				<PixText size={22} color={P.gold} depth={3}>
-					CONTOH 2
-				</PixText>
-			</div>
-			<FixRow f={f} items={EX2} start={140} y={670} step={20} seed={40} />
-			{/* skor */}
-			<div style={{position: 'absolute', right: 70, top: 210, display: 'flex', gap: 12}}>
-				{[sc1, sc2].map((p, i) => (p > 0 ? <div key={i} style={{transform: `scale(${p})`}}><Block text="BAKU +1" bg={P.gold} fg={P.char} size={20} h={64} /></div> : null))}
+			<FixRow f={f} items={EX1} start={8} y={420} step={18} seed={20} drops={[8, 38, 55, 70, 103]} hitsAt={[142, 150, 160, 180, 211]} />
+			<div style={{position: 'absolute', left: 0, right: 0, top: 690, display: 'flex', justifyContent: 'center'}}>
+				{sc1 > 0 ? (
+					<div style={{transform: `scale(${sc1})`}}>
+						<Block text="BAKU +1" bg={P.gold} fg={P.char} size={30} h={86} />
+					</div>
+				) : null}
 			</div>
 		</AbsoluteFill>
 	);
@@ -561,7 +567,7 @@ const S5Medsos: React.FC<{f: number}> = ({f}) => {
 const S6Outro: React.FC<{f: number}> = ({f}) => (
 	<AbsoluteFill>
 		<Sky f={f + 810} />
-		<Porch f={f + 150} wave zoom={interpolate(f, [0, 90], [1.75, 1.9])} panX={-430} />
+		<Porch f={f + 150} wave talk={f > 4 && f < 92 ? FADLI : null} zoom={interpolate(f, [0, 90], [1.75, 1.9])} panX={-430} />
 		<AbsoluteFill style={{background: 'linear-gradient(90deg, transparent 40%, rgba(30,12,20,0.75) 62%)'}} />
 		<div style={{position: 'absolute', right: 80, top: 210, width: 760, textAlign: 'right'}}>
 			<div style={{transform: `translateX(${(1 - r(f, 2, 14)) * 400}px)`}}>
@@ -678,6 +684,35 @@ const S7Ad: React.FC<{f: number}> = ({f}) => {
 	);
 };
 
+
+/** Sari kata piksel bagi klip suara sebenar (masa dalam bingkai promo) */
+export const VOX: {a: number; b: number; who: string; t: string}[] = [
+	{a: 0, b: 67, who: 'NAIM', t: 'Selamat datang ke Bicara Bahasa.'},
+	{a: 65, b: 118, who: 'NAIM', t: 'Rojak atau rancu?'},
+	{a: 276, b: 372, who: 'NAIM', t: 'Apa sebenarnya yang dimaksudkan dengan kerancuan bahasa?'},
+	{a: 373, b: 410, who: 'ADAM', t: '...bercampur aduk...'},
+	{a: 429, b: 560, who: 'FADLI', t: 'Boleh tak you submit assignment tu before deadline?'},
+	{a: 561, b: 669, who: 'ADAM', t: 'Bolehkah awak menghantar tugasan itu sebelum tarikh akhir?'},
+	{a: 678, b: 777, who: 'FADLI', t: 'Aku pernah juga hampir tulis BTW...'},
+	{a: 778, b: 795, who: 'FADLI', t: 'By the way.'},
+	{a: 810, b: 897, who: 'FADLI', t: 'Roti canai boleh rojak dengan kuah.'},
+];
+const WHO_C: Record<string, string> = {NAIM: '#A64D62', FADLI: '#7A1F2E', ADAM: '#3A3A44'};
+
+const PixSubs: React.FC<{f: number}> = ({f}) => {
+	const c = VOX.find((v) => f >= v.a && f < v.b);
+	if (!c) return null;
+	const p = bounceIn(f, c.a, 8);
+	return (
+		<div style={{position: 'absolute', left: 0, right: 0, bottom: 34, display: 'flex', justifyContent: 'center'}}>
+			<div style={{display: 'flex', alignItems: 'stretch', transform: `scale(${0.85 + 0.15 * p})`, opacity: p, boxShadow: '8px 8px 0 rgba(0,0,0,0.45)'}}>
+				<div style={{background: WHO_C[c.who], color: P.cream, fontFamily: PX, fontSize: 20, padding: '16px 18px', display: 'flex', alignItems: 'center'}}>{c.who}</div>
+				<div style={{background: 'rgba(20,10,16,0.88)', color: P.cream, fontFamily: PX, fontSize: 22, lineHeight: 1.5, padding: '16px 22px', maxWidth: 1400}}>{c.t}</div>
+			</div>
+		</div>
+	);
+};
+
 /** Peralihan sapuan blok pada setiap potongan */
 const BlockWipe: React.FC<{f: number}> = ({f}) => {
 	const c = CUTS.find((t) => Math.abs(f - t) <= 14);
@@ -729,6 +764,7 @@ export const Promo: React.FC = () => {
 					<C f={Math.max(0, f - a)} />
 				</Sequence>
 			))}
+			<PixSubs f={f} />
 			<BlockWipe f={f} />
 		</AbsoluteFill>
 	);
