@@ -6,7 +6,7 @@ Konsep **Porch Talk · Borak Beranda**. Rakaman sebenar di beranda rumah ialah b
 | | |
 |---|---|
 | Format | MP4 H.264, 1920×1080, 30 fps, AAC 48 kHz, −16 LUFS |
-| Durasi | ±14:56 (pembukaan 11 s + perbualan + iklan 10 s + outro 15 s) |
+| Durasi | 14:42 (pembukaan 11 s + perbualan + iklan 10 s + outro 15 s) |
 | Penutur | **Naim** (kanan, hos) · **Fadli** (tengah, panel 1) · **Adam** (kiri, panel 2) |
 
 ## Struktur video (ikut rakaman sebenar)
