@@ -1,0 +1,521 @@
+{
+ "dialogue": [
+  {
+   "clip": 1,
+   "a": 0.0,
+   "frames": 347,
+   "out": 330
+  },
+  {
+   "clip": 1,
+   "a": 12.057,
+   "frames": 286,
+   "out": 677
+  },
+  {
+   "clip": 1,
+   "a": 22.159,
+   "frames": 1500,
+   "out": 963
+  },
+  {
+   "clip": 1,
+   "a": 72.784,
+   "frames": 330,
+   "out": 2463
+  },
+  {
+   "clip": 1,
+   "a": 84.269,
+   "frames": 502,
+   "out": 2793
+  },
+  {
+   "clip": 1,
+   "a": 101.1,
+   "frames": 693,
+   "out": 3391
+  },
+  {
+   "clip": 1,
+   "a": 124.932,
+   "frames": 171,
+   "out": 4084
+  },
+  {
+   "clip": 1,
+   "a": 131.254,
+   "frames": 769,
+   "out": 4255
+  },
+  {
+   "clip": 1,
+   "a": 157.506,
+   "frames": 1151,
+   "out": 5024
+  },
+  {
+   "clip": 1,
+   "a": 196.271,
+   "frames": 120,
+   "out": 6175
+  },
+  {
+   "clip": 1,
+   "a": 200.763,
+   "frames": 323,
+   "out": 6295
+  },
+  {
+   "clip": 1,
+   "a": 211.93,
+   "frames": 16,
+   "out": 6618
+  },
+  {
+   "clip": 1,
+   "a": 213.057,
+   "frames": 1270,
+   "out": 6634
+  },
+  {
+   "clip": 1,
+   "a": 256.16,
+   "frames": 781,
+   "out": 7904
+  },
+  {
+   "clip": 1,
+   "a": 282.4,
+   "frames": 116,
+   "out": 9081
+  },
+  {
+   "clip": 1,
+   "a": 286.739,
+   "frames": 726,
+   "out": 9197
+  },
+  {
+   "clip": 1,
+   "a": 325.775,
+   "frames": 125,
+   "out": 9923
+  },
+  {
+   "clip": 1,
+   "a": 330.389,
+   "frames": 1425,
+   "out": 10048
+  },
+  {
+   "clip": 1,
+   "a": 378.547,
+   "frames": 101,
+   "out": 11473
+  },
+  {
+   "clip": 1,
+   "a": 382.328,
+   "frames": 106,
+   "out": 11574
+  },
+  {
+   "clip": 1,
+   "a": 386.787,
+   "frames": 1367,
+   "out": 11680
+  },
+  {
+   "clip": 1,
+   "a": 432.859,
+   "frames": 154,
+   "out": 13047
+  },
+  {
+   "clip": 1,
+   "a": 438.759,
+   "frames": 683,
+   "out": 13201
+  },
+  {
+   "clip": 1,
+   "a": 461.969,
+   "frames": 119,
+   "out": 13884
+  },
+  {
+   "clip": 1,
+   "a": 466.729,
+   "frames": 87,
+   "out": 14003
+  },
+  {
+   "clip": 1,
+   "a": 474.167,
+   "frames": 394,
+   "out": 14090
+  },
+  {
+   "clip": 1,
+   "a": 487.745,
+   "frames": 88,
+   "out": 14484
+  },
+  {
+   "clip": 1,
+   "a": 491.278,
+   "frames": 488,
+   "out": 14572
+  },
+  {
+   "clip": 1,
+   "a": 508.001,
+   "frames": 519,
+   "out": 15060
+  },
+  {
+   "clip": 1,
+   "a": 526.041,
+   "frames": 771,
+   "out": 15579
+  },
+  {
+   "clip": 1,
+   "a": 552.193,
+   "frames": 1560,
+   "out": 16350
+  },
+  {
+   "clip": 1,
+   "a": 604.4,
+   "frames": 513,
+   "out": 18006
+  },
+  {
+   "clip": 1,
+   "a": 622.546,
+   "frames": 932,
+   "out": 18519
+  },
+  {
+   "clip": 1,
+   "a": 654.038,
+   "frames": 503,
+   "out": 19451
+  },
+  {
+   "clip": 1,
+   "a": 671.298,
+   "frames": 352,
+   "out": 19954
+  },
+  {
+   "clip": 1,
+   "a": 683.542,
+   "frames": 269,
+   "out": 20306
+  },
+  {
+   "clip": 1,
+   "a": 693.157,
+   "frames": 392,
+   "out": 20575
+  },
+  {
+   "clip": 1,
+   "a": 706.757,
+   "frames": 1503,
+   "out": 20967
+  },
+  {
+   "clip": 1,
+   "a": 757.32,
+   "frames": 766,
+   "out": 22470
+  },
+  {
+   "clip": 2,
+   "a": 0.0,
+   "frames": 1340,
+   "out": 23332
+  },
+  {
+   "clip": 2,
+   "a": 45.384,
+   "frames": 1086,
+   "out": 24672
+  },
+  {
+   "clip": 2,
+   "a": 82.026,
+   "frames": 71,
+   "out": 25758
+  },
+  {
+   "clip": 2,
+   "a": 84.84,
+   "frames": 168,
+   "out": 25829
+  },
+  {
+   "clip": 2,
+   "a": 90.45,
+   "frames": 188,
+   "out": 25997,
+   "fadeout": 1.0
+  }
+ ],
+ "music": [],
+ "sfx": [
+  {
+   "at": 1150,
+   "name": "pop"
+  },
+  {
+   "at": 1528,
+   "name": "click"
+  },
+  {
+   "at": 1894,
+   "name": "pop"
+  },
+  {
+   "at": 2200,
+   "name": "pop"
+  },
+  {
+   "at": 3472,
+   "name": "pop"
+  },
+  {
+   "at": 3598,
+   "name": "swipe"
+  },
+  {
+   "at": 5399,
+   "name": "swipe"
+  },
+  {
+   "at": 7112,
+   "name": "click"
+  },
+  {
+   "at": 9697,
+   "name": "swipe"
+  },
+  {
+   "at": 10060,
+   "name": "shimmer"
+  },
+  {
+   "at": 11470,
+   "name": "swipe"
+  },
+  {
+   "at": 11797,
+   "name": "shimmer"
+  },
+  {
+   "at": 13054,
+   "name": "swipe"
+  },
+  {
+   "at": 13229,
+   "name": "shimmer"
+  },
+  {
+   "at": 14352,
+   "name": "swipe"
+  },
+  {
+   "at": 14510,
+   "name": "shimmer"
+  },
+  {
+   "at": 15830,
+   "name": "swipe"
+  },
+  {
+   "at": 16109,
+   "name": "shimmer"
+  },
+  {
+   "at": 17064,
+   "name": "swipe"
+  },
+  {
+   "at": 18018,
+   "name": "swipe"
+  },
+  {
+   "at": 18252,
+   "name": "swipe"
+  },
+  {
+   "at": 18893,
+   "name": "shimmer"
+  },
+  {
+   "at": 19451,
+   "name": "swipe"
+  },
+  {
+   "at": 20308,
+   "name": "pop"
+  },
+  {
+   "at": 22132,
+   "name": "swipe"
+  },
+  {
+   "at": 22279,
+   "name": "shimmer"
+  },
+  {
+   "at": 23341,
+   "name": "swipe"
+  },
+  {
+   "at": 24412,
+   "name": "click"
+  },
+  {
+   "at": 24981,
+   "name": "pop"
+  },
+  {
+   "at": 849,
+   "name": "swipe"
+  },
+  {
+   "at": 858,
+   "name": "pop"
+  },
+  {
+   "at": 982,
+   "name": "swipe"
+  },
+  {
+   "at": 991,
+   "name": "pop"
+  },
+  {
+   "at": 1381,
+   "name": "swipe"
+  },
+  {
+   "at": 1390,
+   "name": "pop"
+  },
+  {
+   "at": 3287,
+   "name": "whoosh_soft"
+  },
+  {
+   "at": 3307,
+   "name": "impact_cinematic",
+   "gain": 0.5
+  },
+  {
+   "at": 3317,
+   "name": "click"
+  },
+  {
+   "at": 3375,
+   "name": "whoosh_out"
+  },
+  {
+   "at": 8679,
+   "name": "ad_sting"
+  },
+  {
+   "at": 8971,
+   "name": "whoosh_out"
+  },
+  {
+   "at": 8977,
+   "name": "whoosh_soft"
+  },
+  {
+   "at": 8997,
+   "name": "impact_cinematic",
+   "gain": 0.5
+  },
+  {
+   "at": 9007,
+   "name": "click"
+  },
+  {
+   "at": 9065,
+   "name": "whoosh_out"
+  },
+  {
+   "at": 17902,
+   "name": "whoosh_soft"
+  },
+  {
+   "at": 17922,
+   "name": "impact_cinematic",
+   "gain": 0.5
+  },
+  {
+   "at": 17932,
+   "name": "click"
+  },
+  {
+   "at": 17990,
+   "name": "whoosh_out"
+  },
+  {
+   "at": 23228,
+   "name": "whoosh_soft"
+  },
+  {
+   "at": 23248,
+   "name": "impact_cinematic",
+   "gain": 0.5
+  },
+  {
+   "at": 23258,
+   "name": "click"
+  },
+  {
+   "at": 23316,
+   "name": "whoosh_out"
+  }
+ ],
+ "song": {
+  "out": 8685,
+  "frames": 300,
+  "songFrom": 71.6
+ },
+ "outro": {
+  "from": 25997
+ },
+ "total": 26447,
+ "chapters": [
+  {
+   "from": 3295,
+   "dur": 96
+  },
+  {
+   "from": 8985,
+   "dur": 96
+  },
+  {
+   "from": 17910,
+   "dur": 96
+  },
+  {
+   "from": 23236,
+   "dur": 96
+  }
+ ],
+ "ad": [
+  {
+   "from": 8685,
+   "dur": 300
+  }
+ ]
+}

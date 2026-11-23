@@ -1,0 +1,21 @@
+{
+  "name": "bicara-bahasa-podcast",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render Podcast out/video.mp4"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "5.0.21",
+    "@fontsource/montserrat": "5.0.19",
+    "@fontsource/poppins": "5.0.14",
+    "@remotion/cli": "4.0.300",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.300"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@types/react": "18.3.3"
+  }
+}

@@ -1,0 +1,167 @@
+# Sari kata disemak (ejaan dibetulkan daripada transkripsi Whisper; tiada dialog baharu dicipta).
+# Format: klip|indeks segmen Whisper|penutur (R=Naim, C=Fadli, L=Adam, X=reaksi/tidak pasti)|teks
+# *kata* = kata kunci (warna aksen). '-' sebagai teks = bahagian dipotong (kesilapan rakaman).
+# Tanda ' / ' memaksa pecahan kad sari kata.
+1|0|R|Assalamualaikum dan salam sejahtera. / Selamat datang ke *Bicara Bahasa*.
+1|1|R|Hari ini kita tak duduk dalam studio mewah pun.
+1|2|R|Kita pilih konsep borak dekat beranda rumah.
+1|3|R|Sebab isu yang kita nak bincangkan ini / memang dekat dengan kehidupan seharian kita.
+1|4|R|Saya Naim. Bersama saya, Fadli dan Adam.
+1|5|C|Aku Fadli. Sebelum mula, aku nak buat sedikit pengakuan.
+1|6|C|Kalau ada pertandingan guna *bahasa rojak* dalam perbualan harian, / aku rasa aku boleh masuk final.
+1|7|L|Aku Adam. Hari ini aku bukan nak jadi polis bahasa, / tapi nak bantu kita tengok penggunaan bahasa dari sudut *sintaksis*.
+1|8|L|Kita akan bincang elok-elok, / bukan nak cari siapa yang paling banyak buat salah.
+1|9|R|Okey, baik. Tajuk kita ialah *Rojak atau Rancu?* / Isu *kerancuan bahasa* dalam bahasa Melayu.
+1|10|R|Kita pilih tajuk ini sebab penggunaan bahasa / bercampur dengan bahasa asing semakin biasa.
+1|11|R|Terutamanya dalam perbualan harian dan *media sosial*.
+1|12|R|Kadang-kadang kita sendiri tak perasan bahawa / pengaruh itu sudah masuk ke dalam penulisan formal.
+1|13|C|Tapi aku nak tanya awal. Kalau kita ini campur bahasa / dan semua orang faham, kenapa nak kecoh-kecoh?
+1|14|C|Sebab bahasa kan sentiasa berubah.
+1|15|L|Soalan itu memang penting dan sangat bagus. / Kita tak boleh terus menghukum semua bentuk campuran bahasa.
+1|16|L|Kita kena tengok *tujuan*, *konteks* dan *kesan*. / Sebab itu kita akan bezakan penggunaan santai / dan penggunaan yang tidak sesuai dalam situasi rasmi.
+1|17|R|Jadi kita mulakan dengan perkara asas. / Apa sebenarnya yang dimaksudkan dengan *kerancuan bahasa*?
+1|18|L|Secara umumnya, kerancuan bahasa ini merujuk penggunaan bahasa / yang *bercampur aduk* atau *tidak mematuhi sistem* dan peraturan bahasa,
+1|19|L|sehingga menjejaskan *ketepatan*, *kejelasan* / atau *kesesuaian* penyampaian ayat tersebut.
+1|20|L|Dalam tajuk kita, tumpuan diberikan kepada / pengaruh *bahasa asing* terhadap penggunaan bahasa ini.
+1|21|C|Jadi contoh, kalau aku sebut ayat macam ini: / "Aku dah *submit* *assignment*." / Itu dikira salah atau macam mana?
+1|22|L|Kita kena teliti ayat itu. Dari sudut komunikasi tidak formal, / pendengar mungkin faham maksud kau.
+1|23|L|Tetapi dalam penulisan akademik ataupun urusan rasmi, / bentuk itu tidak sesuai kerana ada padanan Melayu yang jelas, / iaitu *"Saya telah menghantar tugasan."*
+1|24|L|Isunya bukan semata-mata orang faham atau tidak. / Isunya juga ialah *ketepatan* dan *kesesuaian* dalam ragam bahasa tersebut.
+1|25|R|Satu lagi istilah yang selalu orang sebut / ialah *bahasa rojak* dan *bahasa pasar*.
+1|26|R|Dua benda ini sama atau berbeza?
+1|27|L|Biar aku jelaskan.
+1|28|L|*Bahasa rojak* biasanya merujuk pencampuran unsur / daripada dua bahasa atau lebih dalam satu ujaran atau ayat.
+1|29|L|Contohnya, "Nanti kita *meeting* selepas kelas."
+1|30|L|*Bahasa pasar* pula ialah ragam bahasa yang lebih tidak formal, / ringkas dan kadangkala mengabaikan unsur-unsur tertentu.
+1|31|L|Dari segi sejarah, ragam bahasa pasar pernah berfungsi / sebagai bahasa perhubungan dalam situasi perdagangan / dan komunikasi antara kelompok yang berlainan bahasa.
+1|32|C|Jadi bahasa pasar ada fungsi sosial juga, kan? / Bukan muncul semata-mata sebab orang malas belajar bahasa?
+1|33|L|Ya, kita perlu faham fungsinya dalam latar penggunaannya.
+1|34|L|Namun, apabila ragam tidak formal digunakan dalam konteks / yang menuntut *bahasa baku*, contohnya surat rasmi, laporan, / karangan peperiksaan atau pembentangan akademik, / kesesuaiannya perlu dinilai semula.
+1|35|R|Aku rasa poin paling penting ialah *penguasaan konteks*.
+1|36|R|Kita boleh berbual santai dengan kawan, / tetapi kita juga perlu tahu menyesuaikan bahasa / apabila menulis tugasan atau berkomunikasi secara rasmi.
+1|37|C|Oh, jadi maksud dia, bukan kita perlu bercakap / macam baca kamus sepanjang masa, kan?
+1|38|C|Kita cuma jangan sampai bila pensyarah minta *bahasa baku*, / kita masih terbawa-bawa gaya sembang mamak / macam selalu kita borak tu.
+1|39|X|Ya, betul. Tepat sekali.
+1|40|L|Jadi keupayaan memilih ragam bahasa mengikut situasi / itu adalah sebahagian daripada kemahiran kita berbahasa.
+1|41|R|Sekarang kita masuk kepada segmen *Rojak Betulkan*.
+1|42|R|Fadli akan berikan ayat yang biasa kita dengar.
+1|43|R|Adam pula akan teliti apa yang berlaku / dari sudut pilihan kata atau binaan ayat.
+1|44|R|Aku jadi pengadil, tapi kita bukan sekadar cari kesalahan.
+1|45|R|Kita nak fahamkan sebab pembetulannya.
+1|46|C|Baik, aku bagi ayat yang pertama, Adam.
+1|47|C|"Boleh tak *you* *submit* *assignment* tu *before deadline*?"
+1|48|-|-
+1|49|-|-
+1|50|L|Okey, dalam konteks rasmi kita boleh ungkapkan sebagai:
+1|51|L|*"Bolehkah awak menghantar tugasan itu sebelum tarikh akhir?"*
+1|52|L|Jadi kita perhatikan beberapa pandangan.
+1|53|L|Dalam bahasa Inggeris, *you* kepada *awak*.
+1|54|L|*Submit* kepada *menghantar*, / *assignment* pula kepada *tugasan* dalam bahasa Melayu.
+1|55|L|Dan *before the deadline*, / kita boleh menggunakan *sebelum tarikh akhir*.
+1|56|L|Jadi bentuk *"bolehkah"* pula lebih sesuai untuk pertanyaan baku.
+1|57|L|Jadi kita bukan hanya menggantikan perkataan, / tetapi *membina semula ayat* supaya sesuai dengan laras rasmi.
+1|58|R|Maksudnya, pembetulan perlu melihat *keseluruhan ayat*,
+1|59|R|bukan terjemah satu perkataan secara terpisah.
+1|60|C|Oh, macam tu.
+1|61|C|Okey, aku nak bagi ayat yang kedua, boleh tak?
+1|62|X|Boleh.
+1|63|C|"Dia *adalah* seorang pelajar yang rajin."
+1|64|C|Yang ini aku selalu jumpa.
+1|65|C|Salahkah ayat ini?
+1|66|L|Dia tak salah, tapi ada ayat yang lebih kemas,
+1|67|L|iaitu *"Dia seorang pelajar yang rajin"* / atau *"Dia ialah seorang pelajar yang rajin."*
+1|68|L|Dalam tatabahasa Melayu, *"ialah"* digunakan / di hadapan *frasa nama*.
+1|69|L|Dalam contoh ini, predikat *"seorang pelajar yang rajin"* / ialah frasa nama.
+1|70|L|Sebab itu penggunaan *"adalah"* tidak tepat.
+1|71|C|Jadi penggunaan yang tepat ialah...
+1|72|C|Jadi bukan semua tempat kita boleh tukar / *"ialah"* ini kepada *"adalah"*?
+1|73|L|Betul.
+1|74|L|Kita kena kenal jenis frasa yang hadir selepas *kata pemeri* ini.
+1|75|R|Baiklah, kita beralih kepada ayat ketiga pula.
+1|76|C|Ayat ketiga berbunyi:
+1|77|C|"*Banyak pelajar-pelajar* datang ke majlis itu."
+1|78|L|Baik. Yang lebih sesuai ialah: / *"Ramai pelajar datang ke majlis itu."*
+1|79|L|Ada dua perkara.
+1|80|L|Pertama, *"ramai"* lebih lazim digunakan / untuk merujuk bilangan manusia.
+1|81|L|Kedua, kata bilangan *"banyak"* atau *"ramai"* / sudah menunjukkan jumlah yang banyak.
+1|82|L|Jadi penggunaan *"pelajar-pelajar"* / tidak diperlukan dalam binaan ayat ini.
+1|83|L|Penggunaan kedua-duanya serentak / menghasilkan bentuk yang *lewah*.
+1|84|C|Jadi, kalau dah ada "ramai", / tak perlu gandakan dengan "pelajar".
+1|85|C|Senang tak ingat?
+1|86|R|Ayat keempat pula: / "Kerja rumah itu telah *dibuat oleh saya*."
+1|87|L|Ada bentuk yang lebih gramatis,
+1|88|L|iaitu *"Kerja rumah itu telah saya buat."*
+1|89|L|Dalam *ayat pasif* yang melibatkan / kata ganti nama diri pertama atau kedua,
+1|90|L|pelaku hadir sebelum *kata kerja dasar*.
+1|91|L|Jadi, kita tidak menggunakan bentuk *"dibuat oleh saya"*.
+1|92|L|Dalam pola ini, susunan unsur ayat perlu disesuaikan / dengan sistem *ayat pasif* bahasa Melayu dengan betul.
+1|93|C|Menarik.
+1|94|C|Sebab kalau kita terjemah bulat-bulat daripada bahasa Inggeris, / susunannya boleh jadi janggal dan tak sedap bila didengar.
+1|95|L|Ya, pengaruh bahasa asing bukan hanya pada perkataan.
+1|96|L|Kadang-kadang, pengaruh itu muncul / pada *susunan* dan *pola ayat*.
+1|97|R|Ayat terakhir pula: / "*Meeting* itu kena *postpone* sebab ada *urgent matter*."
+1|98|C|Yang ni memang selalu keluar dalam grup WhatsApp. / Aku selalu dapat baca.
+1|99|L|Untuk konteks formal, kita boleh tulis: / *"Mesyuarat itu terpaksa ditangguhkan / kerana terdapat perkara yang mendesak."*
+1|100|L|Jadi, *meeting* ini kita boleh gantikan dengan *mesyuarat*,
+1|101|L|*postpone* boleh gantikan dengan *ditangguhkan*, / dan *urgent matter* dalam bahasa Melayu, *perkara yang mendesak*.
+1|102|L|Perhatikan juga bahawa kita memilih bentuk ayat / yang lebih tersusun dan sesuai untuk urusan-urusan rasmi.
+1|103|R|Daripada lima contoh ini, kita nampak beberapa jenis isu.
+1|104|R|Contohnya, *pemilihan kata*, penggunaan *kata pemeri*, / unsur *lewah* dan binaan *ayat pasif*.
+1|105|R|Ini menunjukkan bahawa kerancuan bahasa boleh berlaku / pada pelbagai peringkat, / bukan hanya apabila dua bahasa dicampurkan.
+1|106|C|Setuju. Aku rasa segmen ini dah berjaya / buat aku fikir dua kali sebelum nak hantar mesej.
+1|107|C|Tapi jangan risau, / aku masih boleh order roti canai dengan yakin.
+1|108|R|Sekarang, kita bawa isu ini ke *dunia pendidikan*.
+1|109|R|Bayangkan seorang murid menulis ayat:
+1|110|R|"Pada hari cuti, saya pergi *shopping* dengan *keluarga saya* / dan kami makan *kat* restoran."
+1|111|R|Apa yang kita boleh perhatikan dalam ayat ini?
+1|112|C|Aku rasa, *shopping*, *keluarga saya* dan *kat*.
+1|113|C|Kalau dalam perbualan, kita boleh faham.
+1|114|C|Tapi kalau dalam karangan sekolah, memang perlu dibaiki.
+1|115|L|Betul. Cadangan ayat baku ialah: / *"Pada hari cuti, saya pergi membeli-belah bersama keluarga / dan kami makan di restoran."*
+1|116|L|Kita menggantikan perkataan yang tidak sesuai / dengan padanan bahasa Melayu.
+1|117|L|Kita juga memilih *kata sendi nama "di"* / untuk menunjukkan tempat.
+1|118|X|Jadi, contoh ini menunjukkan bagaimana bentuk yang biasa / didengar dalam perbualan boleh terbawa-bawa ke dalam penulisan.
+1|119|R|Kita perlu berhati-hati juga.
+1|120|R|Contoh ini ialah *contoh ilustrasi*,
+1|121|R|bukannya petikan daripada karangan murid yang sebenar.
+1|122|R|Kalau kita mahu jadikan bukti autentik dalam tugasan, / kita boleh gunakan contoh sebenar daripada bahan penulisan murid / dengan kebenaran dan tanpa mendedahkan identiti mereka.
+1|123|C|*Media sosial* pula, bagaimana? Sebab murid sekarang / memang banyak terdedah kepada video pendek, komen dan juga *caption*.
+1|124|L|Betul juga.
+1|125|L|Media sosial ini menyediakan ruang komunikasi / yang pantas dan tidak formal.
+1|126|L|Pengguna pun cenderung menggunakan *singkatan*, ejaan ringkas, / *campuran bahasa* dan ayat yang pendek.
+1|127|L|Itu sesuai dengan ciri platform tertentu.
+1|128|L|Namun, jika murid tidak dapat *membezakan konteks*, / bentuk tersebut mungkin terbawa ke dalam tugasan sekolah.
+1|129|C|Aku pernah juga hampir tulis *"BTW"*...
+1|130|X|*By the way.*
+1|131|C|...*by the way* dalam e-mel rasmi. / Nasib baiklah sempat baca sebelum aku hantar.
+1|132|R|Itulah contoh *kawalan laras bahasa*.
+1|133|R|Kita bukan perlu menolak media sosial,
+1|134|R|tetapi perlu mendidik pengguna supaya tahu membezakan / bahasa untuk *caption* santai dengan bahasa untuk *urusan rasmi*.
+1|135|X|Ada juga pengaruh *terjemahan secara langsung*.
+1|136|L|Contohnya, ungkapan *"mengambil tindakan ke atas pelajar"*.
+1|137|L|Kadangkala digunakan apabila maksud yang dikehendaki / ialah *"mengambil tindakan terhadap pelajar"*.
+1|138|L|Jadi perbezaan *kata sendi nama* / boleh mempengaruhi ketepatan maksud.
+1|139|L|Sebab itu kita perlu memahami makna / dan hubungan antara unsur dalam ayat,
+1|140|L|bukan sekadar meniru bentuk bahasa lain.
+1|141|R|Jadi, peranan guru bukan sekadar menandai merah pada kesalahan.
+1|142|R|Guru perlu membantu murid memahami sebab / sesuatu bentuk lebih tepat dan sesuai. Betul tak?
+2|0|R|Sebelum kita tamatkan borak hari ini, / kita simpulkan tiga perkara.
+2|1|R|Pertama, kerancuan bahasa bukan sekadar *percampuran perkataan*,
+2|2|R|malah boleh melibatkan pengaruh bahasa asing / terhadap *struktur ayat*.
+2|3|R|Kedua, bahasa rojak dan ragam tidak formal perlu dilihat / berdasarkan *konteks*, *tujuan* dan *kesesuaiannya*.
+2|4|R|Ketiga, guru memainkan peranan penting / dalam membimbing murid menguasai *bahasa baku*,
+2|5|R|tanpa merendahkan variasi bahasa / yang digunakan dalam kehidupan seharian.
+2|6|L|Dari sudut *sintaksis*, kita perlu memahami bagaimana perkataan / disusun untuk membentuk *frasa*, *klausa* dan *ayat* yang gramatis.
+2|7|L|Penguasaan sistem ini membantu kita / menyampaikan maksud dengan lebih tepat.
+2|8|C|Dan aku pula belajar satu benda.
+2|9|C|Roti canai boleh *rojak* dengan kuah.
+2|10|C|Tapi ayat untuk tugasan, / jangan sampai rojak tak tentu hala.
+2|11|C|Itu perumpamaan untuk kita.
+2|12|R|Terima kasih kerana bersama-sama mendengar *Bicara Bahasa*.
+2|13|R|Semoga perbualan santai ini memberi manfaat / dan membuatkan kita lebih peka
+2|14|R|terhadap penguasaan bahasa Melayu.
+2|15|R|Saya Naim, bersama Fadli dan Adam.
+2|16|R|Assalamualaikum dan salam sejahtera.
+2|17|L|Waalaikumussalam.
+2|18|C|Waalaikumussalam.
+2|19|X|Waalaikumussalam.

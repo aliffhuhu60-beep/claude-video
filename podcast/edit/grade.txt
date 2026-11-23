@@ -1,0 +1,1 @@
+colorbalance=rs=0.01:bs=-0.015:rm=0.02:bm=-0.02:rh=0.015:bh=-0.02,eq=contrast=1.05:saturation=1.06:gamma=1.01,curves=all='0/0.02 0.5/0.5 1/1',vignette=angle=PI/9
