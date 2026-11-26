@@ -1351,6 +1351,8 @@ ui.rec.addEventListener('click', () => (state.recorder ? stopRecording() : start
 // API kecil untuk ujian / tangkap layar: animasi.seek(12.5); animasi.pause();
 window.animasi = {
   seek: t => { seek(t); render(state.t, state.clock); },
+  // Render bingkai tepat (untuk eksport video bingkai demi bingkai)
+  renderAt: (t, clock = t) => { seek(t); state.clock = clock; render(t, clock); },
   play: () => setPlaying(true),
   pause: () => setPlaying(false),
   marks: SCRIPT.marks,

@@ -28,3 +28,10 @@ Untuk membuangnya, tetapkan `CONFIG.showDimensionLines = false`.
 - `drawCat()` / `drawHead()`: rupa kucing. Warna setiap kucing ada dalam `CONFIG.cats`.
 
 Semua keadaan babak ialah fungsi masa `t`, jadi mengubah satu nombor masa tidak merosakkan babak lain.
+
+## Video MP4
+`kucing-lukisan-kejuruteraan.mp4`: 1920×1080, 30 fps, 30 saat, tanpa audio.
+Untuk menjana semula selepas mengubah kod (memerlukan Node, Playwright dan ffmpeg):
+```
+node eksport-video.js kucing-lukisan-kejuruteraan.mp4
+```
