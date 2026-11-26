@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kucing &amp; Lukisan Kejuruteraan</title>
+  <style>
+    :root {
+      --bg: #1b2230;
+      --panel: #242d3d;
+      --text: #e8edf4;
+      --muted: #9aa7b8;
+      --accent: #f5a443;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .stage { max-width: 1280px; margin: 0 auto; padding: 16px; }
+    h1 { font-size: 18px; font-weight: 600; margin: 0 0 10px; letter-spacing: .2px; }
+    canvas { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+      border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,.45); background: #fff; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+      margin-top: 12px; padding: 10px 12px; background: var(--panel); border-radius: 10px; }
+    button, select { background: #34405a; color: var(--text); border: 1px solid #46536f;
+      border-radius: 7px; padding: 7px 12px; font: inherit; font-size: 14px; cursor: pointer; }
+    button:hover, select:hover { background: #3d4a68; }
+    button.rec { border-color: #a5453d; }
+    button.rec.on { background: #c0392b; }
+    #seek { flex: 1 1 220px; accent-color: var(--accent); }
+    #timeLabel { font-variant-numeric: tabular-nums; min-width: 92px; color: var(--muted); }
+    label { color: var(--muted); font-size: 14px; display: flex; gap: 6px; align-items: center; }
+    .hint { color: var(--muted); font-size: 13px; margin: 8px 2px 0; }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <h1>Unjuran Ortografik &amp; Lukisan Isometri — bersama Oyen &amp; Abu</h1>
+    <canvas id="kanvas" aria-label="Animasi lukisan kejuruteraan dengan dua ekor kucing"></canvas>
+
+    <div class="controls">
+      <button id="btnPlay" type="button">⏸ Jeda</button>
+      <button id="btnRestart" type="button">↺ Ulang</button>
+      <input id="seek" type="range" min="0" max="30" step="0.01" value="0" aria-label="Garis masa">
+      <span id="timeLabel">0.0 / 30.0 s</span>
+      <select id="speed" aria-label="Kelajuan">
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="2">2×</option>
+      </select>
+      <label><input id="loop" type="checkbox"> Gelung</label>
+      <button id="btnRecord" class="rec" type="button">⏺ Rakam WebM</button>
+    </div>
+    <p class="hint">Klik kucing untuk mengusiknya · <b>Space</b> main/jeda · <b>R</b> ulang · <b>←/→</b> lompat 1 s</p>
+  </main>
+
+  <script src="animasi.js"></script>
+</body>
+</html>
