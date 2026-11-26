@@ -1,0 +1,51 @@
+1
+00:00:00,220 --> 00:00:03,560
+Jom kita belajar kata bilangan dan penjodoh bilangan!
+
+2
+00:00:03,580 --> 00:00:07,605
+Kata bilangan ialah perkataan yang menunjukkan jumlah atau bilangan sesuatu.
+
+3
+00:00:07,625 --> 00:00:08,965
+Dua batang pensel.
+
+4
+00:00:08,985 --> 00:00:10,212
+Tiga buah buku.
+
+5
+00:00:10,232 --> 00:00:11,501
+Beberapa orang murid.
+
+6
+00:00:11,521 --> 00:00:12,867
+Semua pemain.
+
+7
+00:00:12,887 --> 00:00:17,291
+Penjodoh bilangan digunakan bersama kata bilangan untuk menerangkan unit atau bentuk benda.
+
+8
+00:00:17,311 --> 00:00:18,588
+Sebatang pensel.
+
+9
+00:00:18,608 --> 00:00:19,948
+Sehelai kertas.
+
+10
+00:00:19,968 --> 00:00:21,193
+Seekor kucing.
+
+11
+00:00:21,213 --> 00:00:22,574
+Sebuah buku.
+
+12
+00:00:22,594 --> 00:00:26,511
+Kata bilangan menunjukkan jumlah, penjodoh bilangan menunjukkan unit.
+
+13
+00:00:26,531 --> 00:00:29,931
+Gunakan kata bilangan dan penjodoh bilangan dengan betul!

@@ -1,0 +1,396 @@
+{
+ "duration": 30.0,
+ "fps": 30,
+ "clips": [
+  {
+   "id": "s1",
+   "at": 0.3,
+   "end": 3.425,
+   "offset": 0.1,
+   "sub": "Jom kita belajar *kata bilangan* dan ~penjodoh bilangan~!",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Jom",
+     "t": 0.3
+    },
+    {
+     "w": "kita",
+     "t": 0.618
+    },
+    {
+     "w": "belajar",
+     "t": 0.902
+    },
+    {
+     "w": "kata",
+     "t": 1.289
+    },
+    {
+     "w": "bilangan",
+     "t": 1.561
+    },
+    {
+     "w": "dan",
+     "t": 2.039
+    },
+    {
+     "w": "penjodoh",
+     "t": 2.311
+    },
+    {
+     "w": "bilangan",
+     "t": 2.709
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "at": 3.66,
+   "end": 7.605,
+   "offset": 0.1,
+   "sub": "*Kata bilangan* ialah perkataan yang menunjukkan ^jumlah^ atau ^bilangan^ sesuatu.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Kata",
+     "t": 3.66
+    },
+    {
+     "w": "bilangan",
+     "t": 3.988
+    },
+    {
+     "w": "ialah",
+     "t": 4.367
+    },
+    {
+     "w": "perkataan",
+     "t": 4.623
+    },
+    {
+     "w": "yang",
+     "t": 5.197
+    },
+    {
+     "w": "menunjukkan",
+     "t": 5.463
+    },
+    {
+     "w": "jumlah",
+     "t": 5.935
+    },
+    {
+     "w": "atau",
+     "t": 6.314
+    },
+    {
+     "w": "bilangan",
+     "t": 6.57
+    },
+    {
+     "w": "sesuatu",
+     "t": 6.918
+    }
+   ]
+  },
+  {
+   "id": "e1",
+   "at": 7.705,
+   "end": 8.965,
+   "offset": 0.121708,
+   "sub": "*Dua* batang pensel.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Dua",
+     "t": 7.705
+    },
+    {
+     "w": "batang",
+     "t": 7.981
+    },
+    {
+     "w": "pensel",
+     "t": 8.299
+    }
+   ]
+  },
+  {
+   "id": "e2",
+   "at": 9.065,
+   "end": 10.212,
+   "offset": 0.09775,
+   "sub": "*Tiga* buah buku.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Tiga",
+     "t": 9.065
+    },
+    {
+     "w": "buah",
+     "t": 9.403
+    },
+    {
+     "w": "buku",
+     "t": 9.649
+    }
+   ]
+  },
+  {
+   "id": "e3",
+   "at": 10.312,
+   "end": 11.501,
+   "offset": 0.121708,
+   "sub": "*Beberapa* orang murid.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Beberapa",
+     "t": 10.312
+    },
+    {
+     "w": "orang",
+     "t": 10.774
+    },
+    {
+     "w": "murid",
+     "t": 11.06
+    }
+   ]
+  },
+  {
+   "id": "e4",
+   "at": 11.601,
+   "end": 12.687,
+   "offset": 0.10125,
+   "sub": "*Semua* pemain.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Semua",
+     "t": 11.601
+    },
+    {
+     "w": "pemain",
+     "t": 12.001
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "at": 12.967,
+   "end": 17.291,
+   "offset": 0.09775,
+   "sub": "~Penjodoh bilangan~ digunakan bersama *kata bilangan* untuk menerangkan ^unit^ atau ^bentuk^ benda.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Penjodoh",
+     "t": 12.967
+    },
+    {
+     "w": "bilangan",
+     "t": 13.367
+    },
+    {
+     "w": "digunakan",
+     "t": 13.715
+    },
+    {
+     "w": "bersama",
+     "t": 14.186
+    },
+    {
+     "w": "kata",
+     "t": 14.535
+    },
+    {
+     "w": "bilangan",
+     "t": 14.791
+    },
+    {
+     "w": "untuk",
+     "t": 15.221
+    },
+    {
+     "w": "menerangkan",
+     "t": 15.457
+    },
+    {
+     "w": "unit",
+     "t": 15.99
+    },
+    {
+     "w": "atau",
+     "t": 16.266
+    },
+    {
+     "w": "bentuk",
+     "t": 16.512
+    },
+    {
+     "w": "benda",
+     "t": 16.779
+    }
+   ]
+  },
+  {
+   "id": "p1",
+   "at": 17.391,
+   "end": 18.588,
+   "offset": 0.113541,
+   "sub": "*Se*~batang~ pensel.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Sebatang",
+     "t": 17.391
+    },
+    {
+     "w": "pensel",
+     "t": 17.878
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "at": 18.688,
+   "end": 19.948,
+   "offset": 0.096166,
+   "sub": "*Se*~helai~ kertas.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Sehelai",
+     "t": 18.688
+    },
+    {
+     "w": "kertas",
+     "t": 19.228
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "at": 20.048,
+   "end": 21.193,
+   "offset": 0.096166,
+   "sub": "*Se*~ekor~ kucing.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Seekor",
+     "t": 20.048
+    },
+    {
+     "w": "kucing",
+     "t": 20.536
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "at": 21.293,
+   "end": 22.394,
+   "offset": 0.096166,
+   "sub": "*Se*~buah~ buku.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Sebuah",
+     "t": 21.293
+    },
+    {
+     "w": "buku",
+     "t": 21.79
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "at": 22.674,
+   "end": 26.511,
+   "offset": 0.098375,
+   "sub": "*Kata bilangan* menunjukkan ^jumlah^, ~penjodoh bilangan~ menunjukkan ^unit^.",
+   "hideSub": false,
+   "words": [
+    {
+     "w": "Kata",
+     "t": 22.674
+    },
+    {
+     "w": "bilangan",
+     "t": 23.033
+    },
+    {
+     "w": "menunjukkan",
+     "t": 23.413
+    },
+    {
+     "w": "jumlah",
+     "t": 23.903
+    },
+    {
+     "w": "penjodoh",
+     "t": 24.685
+    },
+    {
+     "w": "bilangan",
+     "t": 25.098
+    },
+    {
+     "w": "menunjukkan",
+     "t": 25.49
+    },
+    {
+     "w": "unit",
+     "t": 26.044
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "at": 26.611,
+   "end": 29.681,
+   "offset": 0.1,
+   "sub": "Gunakan *kata bilangan* dan ~penjodoh bilangan~ dengan betul!",
+   "hideSub": true,
+   "words": [
+    {
+     "w": "Gunakan",
+     "t": 26.611
+    },
+    {
+     "w": "kata",
+     "t": 27.094
+    },
+    {
+     "w": "bilangan",
+     "t": 27.357
+    },
+    {
+     "w": "dan",
+     "t": 27.817
+    },
+    {
+     "w": "penjodoh",
+     "t": 28.081
+    },
+    {
+     "w": "bilangan",
+     "t": 28.486
+    },
+    {
+     "w": "dengan",
+     "t": 28.892
+    },
+    {
+     "w": "betul",
+     "t": 29.111
+    }
+   ]
+  }
+ ]
+}

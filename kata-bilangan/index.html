@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<title>Kata Bilangan dan Penjodoh Bilangan</title>
+<style>
+@font-face{font-family:Lilita;src:url(node_modules/@fontsource/lilita-one/files/lilita-one-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Nunito;font-weight:800;src:url(node_modules/@fontsource/nunito/files/nunito-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:Nunito;font-weight:900;src:url(node_modules/@fontsource/nunito/files/nunito-latin-900-normal.woff2) format("woff2")}
+:root{
+  --kb:#F2B33D; --kb-d:#9c6a12; --kb-ink:#2b1c00;
+  --pb:#3EC1B3; --pb-d:#1d7a70; --pb-ink:#032b27;
+  --panel:rgba(20,25,40,.88); --edge:#0b0e18;
+}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:Nunito,sans-serif}
+#gl{position:absolute;left:0;top:0}
+#ui{position:absolute;inset:0;overflow:hidden;font-family:Nunito,sans-serif;color:#fff}
+.abs{position:absolute;left:0;top:0;transform-origin:50% 50%;will-change:transform,opacity}
+.c{display:flex;align-items:center;justify-content:center}
+
+/* tajuk */
+.ttl{font-family:Lilita;font-size:132px;line-height:1;letter-spacing:2px;white-space:nowrap;
+  -webkit-text-stroke:0;paint-order:stroke fill}
+.ttl.kb{color:var(--kb);text-shadow:0 4px 0 var(--kb-d),0 8px 0 var(--kb-d),0 12px 0 #6e4a08,0 18px 22px rgba(0,0,0,.45)}
+.ttl.pb{color:var(--pb);text-shadow:0 4px 0 var(--pb-d),0 8px 0 var(--pb-d),0 12px 0 #0f514a,0 18px 22px rgba(0,0,0,.45)}
+.amp{font-family:Lilita;font-size:84px;color:#fff;text-shadow:0 4px 0 #8a96a8,0 8px 0 #5d6778,0 14px 18px rgba(0,0,0,.4)}
+.tag{font-family:Lilita;font-size:34px;letter-spacing:3px;color:#fff;background:rgba(20,25,40,.82);
+  padding:10px 26px 8px;border-radius:8px;box-shadow:0 0 0 4px var(--edge),inset 0 -6px 0 rgba(0,0,0,.35)}
+
+/* pil bab */
+.chap{font-family:Lilita;font-size:38px;letter-spacing:2px;padding:12px 28px 10px;border-radius:10px;
+  box-shadow:0 0 0 4px var(--edge),inset 0 -7px 0 rgba(0,0,0,.25),0 10px 18px rgba(0,0,0,.3)}
+.chap.kb{background:var(--kb);color:var(--kb-ink)}
+.chap.pb{background:var(--pb);color:var(--pb-ink)}
+.chap.wh{background:#f4f1ea;color:#1b2030}
+
+/* kad definisi */
+.card{background:var(--panel);border-radius:16px;padding:30px 46px 32px;width:1320px;box-sizing:border-box;
+  box-shadow:0 0 0 5px var(--edge),inset 0 0 0 4px rgba(255,255,255,.10),0 16px 30px rgba(0,0,0,.35);
+  font-weight:800;font-size:50px;line-height:1.28;text-align:center}
+.card .k{font-family:Lilita;font-weight:400;font-size:40px;letter-spacing:2px;display:inline-block;margin-bottom:14px;padding:6px 20px 4px;border-radius:8px}
+.k.kb{background:var(--kb);color:var(--kb-ink)} .k.pb{background:var(--pb);color:var(--pb-ink)}
+.card b{font-weight:900}
+b.kb,span.kb{color:var(--kb)} b.pb,span.pb{color:var(--pb)} b.wh{color:#fff}
+.mark{display:inline-block;padding:0 12px;border-radius:8px;margin:0 2px}
+.mark.kb{background:var(--kb);color:var(--kb-ink)} .mark.pb{background:var(--pb);color:var(--pb-ink)}
+
+/* label contoh */
+.lbl{font-family:Lilita;font-size:44px;letter-spacing:1px;white-space:nowrap;color:#fff;background:var(--panel);
+  padding:10px 24px 8px;border-radius:10px;box-shadow:0 0 0 4px var(--edge),inset 0 -6px 0 rgba(0,0,0,.3),0 10px 16px rgba(0,0,0,.3)}
+.lbl .hl{display:inline-block;padding:2px 12px 0;border-radius:7px;transform-origin:50% 60%}
+.lbl .hl.kb{background:var(--kb);color:var(--kb-ink)}
+.lbl .hl.pb{background:var(--pb);color:var(--pb-ink)}
+.lbl{text-align:center;padding:12px 22px 10px;line-height:1.05}
+.lbl .rest{font-family:Nunito;font-weight:900;font-size:34px;margin-top:8px;color:#f2f4f8}
+.lbl .se{color:var(--kb);margin-right:2px}
+
+/* petunjuk warna */
+.legend{display:flex;gap:26px;font-weight:900;font-size:28px;background:rgba(20,25,40,.78);padding:12px 22px;border-radius:10px;
+  box-shadow:0 0 0 3px var(--edge)}
+.legend i{display:inline-block;width:26px;height:26px;border-radius:5px;margin-right:10px;vertical-align:-4px;box-shadow:0 0 0 3px var(--edge)}
+
+/* panel rumusan */
+.pane{width:830px;min-height:330px;box-sizing:border-box;background:var(--panel);border-radius:18px;padding:0 0 28px;overflow:hidden;
+  box-shadow:0 0 0 5px var(--edge),inset 0 0 0 4px rgba(255,255,255,.08),0 18px 34px rgba(0,0,0,.35);text-align:center}
+.pane h2{margin:0 0 26px;font-family:Lilita;font-weight:400;font-size:52px;letter-spacing:2px;padding:20px 0 14px}
+.pane.kb h2{background:var(--kb);color:var(--kb-ink);box-shadow:inset 0 -8px 0 rgba(0,0,0,.18)}
+.pane.pb h2{background:var(--pb);color:var(--pb-ink);box-shadow:inset 0 -8px 0 rgba(0,0,0,.18)}
+.chips{display:flex;justify-content:center;gap:14px;flex-wrap:nowrap;padding:0 20px}
+.chip{display:inline-block;font-family:Lilita;font-size:46px;padding:10px 20px 6px;border-radius:10px;
+  box-shadow:0 0 0 4px var(--edge),inset 0 -7px 0 rgba(0,0,0,.25)}
+.pane.kb .chip{background:#3a2e14;color:var(--kb)} .pane.pb .chip{background:#11332f;color:var(--pb)}
+.pane .cap{margin-top:24px;font-weight:900;font-size:36px;color:#e9edf5}
+
+/* contoh lengkap */
+.full{display:flex;gap:26px;align-items:flex-start}
+.fw{display:flex;flex-direction:column;align-items:center;gap:20px}
+.blk{font-family:Lilita;font-size:104px;line-height:1;padding:20px 34px 12px;border-radius:14px;
+  box-shadow:0 0 0 5px var(--edge),inset 0 -12px 0 rgba(0,0,0,.25),0 16px 26px rgba(0,0,0,.35)}
+.blk.kb{background:var(--kb);color:var(--kb-ink)} .blk.pb{background:var(--pb);color:var(--pb-ink)} .blk.wh{background:#f4f1ea;color:#1b2030}
+.ftag{font-weight:900;font-size:32px;padding:8px 18px;border-radius:8px;background:rgba(20,25,40,.88);box-shadow:0 0 0 3px var(--edge);white-space:nowrap}
+.ftag.kb{color:var(--kb)} .ftag.pb{color:var(--pb)} .ftag.wh{color:#fff}
+
+/* mesej penutup */
+.close{font-family:Lilita;font-size:70px;line-height:1.15;text-align:center;color:#fff;background:var(--panel);
+  padding:28px 56px 24px;border-radius:18px;width:1500px;box-sizing:border-box;
+  box-shadow:0 0 0 5px var(--edge),inset 0 0 0 4px rgba(255,255,255,.1),0 18px 34px rgba(0,0,0,.4)}
+.close .kb{color:var(--kb)} .close .pb{color:var(--pb)}
+
+/* sarikata */
+#sub{position:absolute;left:960px;top:992px;transform:translate(-50%,-50%);font-weight:800;font-size:42px;line-height:1.25;
+  color:#fff;background:rgba(10,12,20,.76);padding:12px 32px 14px;border-radius:12px;width:max-content;max-width:1720px;text-align:center;white-space:normal;box-sizing:border-box}
+#sub b{font-weight:900}
+
+#vign{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.28) 100%)}
+#dim{position:absolute;inset:0;background:linear-gradient(rgba(8,12,24,.55),rgba(8,12,24,.25) 70%,rgba(8,12,24,.5));opacity:0}
+#wipe{position:absolute;inset:0}
+#wipe div{position:absolute;width:120px;height:120px;image-rendering:pixelated;background-size:120px 120px;transform:scale(0)}
+#black{position:absolute;inset:0;background:#000;opacity:0}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl" width="1920" height="1080"></canvas>
+  <div id="vign"></div>
+  <div id="dim"></div>
+  <div id="ui"></div>
+  <div id="sub"></div>
+  <div id="wipe"></div>
+  <div id="black"></div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

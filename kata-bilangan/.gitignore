@@ -1,0 +1,6 @@
+node_modules/
+build/frames/
+build/stills/
+build/check/
+build/audio.wav
+build/render.log

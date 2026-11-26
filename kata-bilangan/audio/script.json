@@ -1,0 +1,94 @@
+[
+ {
+  "id": "s1",
+  "at": 0.3,
+  "rate": "+10%",
+  "text": "Jom kita belajar kata bilangan dan penjodoh bilangan!",
+  "sub": "Jom kita belajar *kata bilangan* dan ~penjodoh bilangan~!"
+ },
+ {
+  "id": "s2",
+  "at": 3.66,
+  "rate": "+22%",
+  "text": "Kata bilangan ialah perkataan yang menunjukkan jumlah atau bilangan sesuatu.",
+  "sub": "*Kata bilangan* ialah perkataan yang menunjukkan ^jumlah^ atau ^bilangan^ sesuatu."
+ },
+ {
+  "id": "e1",
+  "gap": 0.1,
+  "rate": "+22%",
+  "text": "Dua batang pensel.",
+  "sub": "*Dua* batang pensel."
+ },
+ {
+  "id": "e2",
+  "gap": 0.1,
+  "rate": "+22%",
+  "text": "Tiga buah buku.",
+  "sub": "*Tiga* buah buku."
+ },
+ {
+  "id": "e3",
+  "gap": 0.1,
+  "rate": "+22%",
+  "text": "Beberapa orang murid.",
+  "sub": "*Beberapa* orang murid."
+ },
+ {
+  "id": "e4",
+  "gap": 0.1,
+  "rate": "+22%",
+  "text": "Semua pemain.",
+  "sub": "*Semua* pemain."
+ },
+ {
+  "id": "s4",
+  "gap": 0.28,
+  "rate": "+22%",
+  "text": "Penjodoh bilangan digunakan bersama kata bilangan untuk menerangkan unit atau bentuk benda.",
+  "sub": "~Penjodoh bilangan~ digunakan bersama *kata bilangan* untuk menerangkan ^unit^ atau ^bentuk^ benda."
+ },
+ {
+  "id": "p1",
+  "gap": 0.1,
+  "rate": "+18%",
+  "text": "Sebatang pensel.",
+  "sub": "*Se*~batang~ pensel."
+ },
+ {
+  "id": "p2",
+  "gap": 0.1,
+  "rate": "+18%",
+  "text": "Sehelai kertas.",
+  "sub": "*Se*~helai~ kertas."
+ },
+ {
+  "id": "p3",
+  "gap": 0.1,
+  "rate": "+18%",
+  "text": "Seekor kucing.",
+  "sub": "*Se*~ekor~ kucing."
+ },
+ {
+  "id": "p4",
+  "gap": 0.1,
+  "rate": "+18%",
+  "text": "Sebuah buku.",
+  "sub": "*Se*~buah~ buku."
+ },
+ {
+  "id": "s6",
+  "gap": 0.28,
+  "rate": "+15%",
+  "text": "Kata bilangan menunjukkan jumlah, penjodoh bilangan menunjukkan unit.",
+  "sub": "*Kata bilangan* menunjukkan ^jumlah^, ~penjodoh bilangan~ menunjukkan ^unit^."
+ },
+ {
+  "id": "s8",
+  "gap": 0.1,
+  "rate": "+14%",
+  "text": "Gunakan kata bilangan dan penjodoh bilangan dengan betul!",
+  "sub": "Gunakan *kata bilangan* dan ~penjodoh bilangan~ dengan betul!",
+  "hideSub": true
+ }
+]
